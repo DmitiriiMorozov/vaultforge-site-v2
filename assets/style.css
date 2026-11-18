@@ -266,73 +266,16 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
 .hero .micro{margin:22px 0 0}
 .hero .scroll-link{margin-top:44px}
 
-/* ---------- 9. Device mock (окно Obsidian) ---------- */
+/* ---------- 9. Скриншот продукта (реальное окно Obsidian) ---------- */
 .device{position:relative;margin:74px auto 0;width:100%;max-width:1080px}
-.device-frame{
-  position:relative;
-  background:linear-gradient(180deg,#0A0B14,#06070E);
+.device-img{
+  display:block;width:100%;height:auto;
+  border-radius:16px;
   border:1px solid rgba(255,255,255,.11);
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 44px 100px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.03),inset 0 1px 0 rgba(255,255,255,.07);
+  background:#0A0B12;
+  box-shadow:0 44px 100px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.03);
 }
-.device-chrome{
-  display:flex;align-items:center;gap:12px;
-  height:38px;padding:0 14px;
-  background:rgba(255,255,255,.028);
-  border-bottom:1px solid rgba(255,255,255,.07);
-}
-.device-dots{display:flex;gap:6px;flex:none}
-.device-dots i{width:8px;height:8px;border-radius:50%;background:#3A3D4A;display:block}
-.device-dots i:nth-child(1){background:#FF5F57}
-.device-dots i:nth-child(2){background:#FEBC2E}
-.device-dots i:nth-child(3){background:#28C840}
-.device-label{
-  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;
-  color:rgba(255,255,255,.42);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-}
-.device-body{
-  display:grid;
-  grid-template-columns:52px 232px minmax(0,1fr);
-  height:560px;
-  background:#08090F;
-  overflow:hidden;
-}
-.om-rail{
-  display:flex;flex-direction:column;align-items:center;gap:16px;
-  padding:16px 0;
-  border-right:1px solid rgba(255,255,255,.06);
-  color:rgba(255,255,255,.30);font-size:14px;line-height:1;
-}
-.om-ico{display:grid;place-items:center;width:26px;height:26px;border-radius:6px}
-.om-ico.is-active{background:rgba(255,255,255,.06);color:rgba(255,255,255,.6)}
-.om-side{
-  border-right:1px solid rgba(255,255,255,.06);
-  padding:14px 0 18px;
-  overflow:hidden;
-}
-.om-side-head{
-  font-family:var(--font-mono);font-size:10px;letter-spacing:.05em;
-  color:rgba(255,255,255,.45);padding:0 16px 12px;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-}
-.om-tree{list-style:none;margin:0;padding:0 8px;font-size:11.5px;line-height:1.75}
-.om-tree li{
-  padding:2px 8px;border-radius:5px;color:rgba(255,255,255,.48);
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-}
-.om-tree li.om-folder{color:rgba(255,255,255,.74);font-weight:500;margin-top:7px}
-.om-tree ul{list-style:none;margin:0;padding:1px 0 2px 12px}
-.om-tree ul li{color:rgba(255,255,255,.42);font-size:11px}
-.om-tree ul li.is-active{color:rgba(255,255,255,.92)}
-.om-tree li.is-active{background:rgba(140,150,255,.14);color:rgba(255,255,255,.9)}
-.om-graph{
-  position:relative;overflow:hidden;
-  background:radial-gradient(680px 340px at 52% 44%,rgba(72,84,200,.12),transparent 72%);
-}
-.om-graph img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.96}
-.device--hero .device-body{height:470px}
-.device--hero .device-frame{box-shadow:0 50px 110px rgba(0,0,0,.66),0 0 0 1px rgba(255,255,255,.03),inset 0 1px 0 rgba(255,255,255,.07)}
+.device--hero .device-img{box-shadow:0 50px 110px rgba(0,0,0,.66),0 0 0 1px rgba(255,255,255,.03)}
 .device--full{margin-top:56px}
 .preview-note{
   margin:26px auto 0;max-width:64ch;text-align:center;
@@ -661,15 +604,10 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
 
 /* ---------- 21. Responsive ---------- */
 @media (max-width:1024px){
-  .device-body{grid-template-columns:46px 200px minmax(0,1fr);height:480px}
-  .device--hero .device-body{height:400px}
   .section{padding:88px 0}
   .hero{padding:76px 0 84px}
 }
 @media (max-width:900px){
-  .om-rail{display:none}
-  .device-body{grid-template-columns:156px minmax(0,1fr);height:400px}
-  .device--hero .device-body{height:320px}
 }
 @media (max-width:820px){
   .req-list{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -696,15 +634,9 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
   .hero .lead{margin-bottom:34px}
   .hero .btn-pill{min-width:0;width:100%;padding:17px 22px}
   .device{margin-top:52px}
-  .om-rail{display:none}
-  .device-body{grid-template-columns:112px minmax(0,1fr);height:320px}
-  .device--hero .device-body{height:250px}
-  .om-side-head{font-size:9px;padding:0 12px 10px}
-  .om-tree{font-size:9.5px;padding:0 4px}
-  .om-tree li{padding:2px 6px}
-  .om-tree ul{padding-left:8px}
-  .om-tree ul li{font-size:9px}
-  .om-graph img{object-fit:cover}
+  /* на узком экране показываем сам граф: дерево файлов всё равно нечитаемо */
+  .device-img{aspect-ratio:4/3;object-fit:cover;object-position:88% 46%;height:auto}
+  .device--hero .device-img{aspect-ratio:5/4}
   .stats-grid{margin:40px 0 18px}
   .stat-cell{padding:30px 14px}
   .stat-label{font-size:12.5px}
