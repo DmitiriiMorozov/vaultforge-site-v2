@@ -382,9 +382,11 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
 }
 .manifesto .wrap{position:relative;z-index:2}
 .manifesto .eyebrow{margin-bottom:34px}
-.manifesto .h2-sans{max-width:17ch;margin-bottom:6px}
+.manifesto .h2-sans{max-width:none;margin-bottom:6px}
+.manifesto .manifesto-claim{display:block;max-width:19ch}
 .manifesto .serif-italic{
-  display:block;font-size:clamp(34px,4.6vw,60px);line-height:1.05;color:var(--text);
+  display:block;max-width:none;
+  font-size:clamp(34px,4.6vw,60px);line-height:1.06;color:var(--text);
   margin-bottom:34px;
 }
 .manifesto .lead{margin-bottom:24px;color:var(--muted);max-width:64ch}
@@ -706,7 +708,8 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
   .stats-grid{margin:40px 0 18px}
   .stat-cell{padding:30px 14px}
   .stat-label{font-size:12.5px}
-  .manifesto .serif-italic{font-size:clamp(28px,8vw,36px)}
+  .manifesto .manifesto-claim{max-width:none;font-size:clamp(26px,7.4vw,32px)}
+  .manifesto .serif-italic{font-size:clamp(26px,7.6vw,34px)}
   .point{padding:18px 0 18px 32px}
   .module-card{padding:26px 22px}
   .module-card h3{font-size:19px}
