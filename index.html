@@ -1,86 +1,108 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vaultforge — система безликих цифровых продуктов</title>
-<meta name="description" content="База знаний в Obsidian: как собрать цифровой продукт, настроить оплату и продавать без лица и блога. 37 файлов, 26 уроков, шаблоны и документы.">
-<style>
-:root{--bg:#0e0e10;--card:#16161a;--line:#26262e;--text:#e9e9ef;--muted:#9a9aa8;--accent:#3fc6ff}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-.wrap{max-width:860px;margin:0 auto;padding:40px 20px}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
-h1{font-size:32px;line-height:1.2;margin:0 0 14px}h2{font-size:20px;margin:30px 0 10px}h3{font-size:17px;margin:18px 0 8px}
-.lead{color:var(--muted);font-size:17px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:16px 0}
-.btn{display:inline-block;background:var(--accent);color:#04121a;font-weight:700;padding:13px 24px;border-radius:10px;margin:8px 10px 8px 0}
-.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
-table{width:100%;border-collapse:collapse;margin:10px 0}td,th{border-bottom:1px solid var(--line);padding:9px 6px;text-align:left;font-size:15px;vertical-align:top}
-.muted{color:var(--muted);font-size:14px}code{background:#000;padding:2px 6px;border-radius:6px;font-size:14px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:700px){.grid{grid-template-columns:1fr}}
-.price{font-size:26px;font-weight:700;margin:6px 0}ul{padding-left:20px}li{margin:5px 0}
-footer{border-top:1px solid var(--line);margin-top:36px;padding-top:20px}
-</style></head><body><div class="wrap">
-<p class="muted"><b>Vaultforge</b> · система безликих цифровых продуктов &nbsp;|&nbsp; <a href="legal/offer.html">Оферта</a> · <a href="legal/refund.html">Возврат</a> · <a href="checkout.html">Оплата</a></p>
-<h1>Система, которая собирает и продаёт цифровой продукт без лица</h1>
-<p class="lead">37 файлов в Obsidian: методология, шаблоны, оферта и политика возврата. Без блога, без созвонов, без обещаний дохода.</p>
-<p><a class="btn" href="checkout.html">Купить — 2 490 ₽</a><a class="btn ghost" href="checkout.html">Vault + Engine — 6 900 ₽</a></p>
+<meta name="description" content="База знаний в Obsidian: как собрать цифровой продукт, подключить оплату и продавать без лица и блога. 37 файлов, 26 уроков, шаблоны и документы.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%23C6FF3D'/></svg>">
+</head><body>
+<header><div class="wrap nav">
+<a class="logo" href="/"><i></i>VAULTFORGE</a>
+<nav style="display:flex;gap:22px;flex-wrap:wrap">
+<a href="#inside">Что внутри</a><a href="#pricing">Тарифы</a><a href="#how">Как это работает</a><a href="legal/offer.html">Оферта</a><a href="legal/refund.html">Возврат</a>
+</nav></div></header>
+<div class="wrap hero">
+<div class="badge"><b>Vaultforge</b> · система, а не курс</div>
+<h1>Продукт, который <em>продаёт</em> себя сам</h1>
+<p class="lead">37 файлов в Obsidian: методология, шаблоны, оферта и политика возврата. Собираете базу знаний по своей теме, подключаете оплату и снимаете ролики — без лица, блога и созвонов.</p>
+<div class="cta">
+<a class="btn" href="checkout.html">Купить Vault — 2 490 ₽</a>
+<a class="btn ghost" href="checkout.html">Vault + Engine — 6 900 ₽</a>
+</div>
+<div class="stats">
+<div class="stat"><b>37</b><span>файлов в хранилище</span></div>
+<div class="stat"><b>26</b><span>уроков с чек-листами</span></div>
+<div class="stat"><b>4</b><span>модуля: ниша → продукт → оплата → трафик</span></div>
+<div class="stat"><b>15 мин</b><span>до первого действия</span></div>
+</div>
+</div>
 
-<div class="card">
+<div class="stripes"><div class="wrap" style="padding:26px 24px">
+<p style="margin:0;color:var(--muted);font-size:14.5px">Никаких обещаний дохода. Внутри — процедуры: как выбрать угол, собрать базу, подключить Robokassa и выдавать файл по одноразовой ссылке.</p>
+</div></div>
+
+<section id="inside"><div class="wrap">
 <h2>Что внутри</h2>
-<table>
-<tr><td>01 · Ниша и оффер</td><td>6 уроков: выбор угла, проверка спроса, упаковка знания, разбор конкурентов, оффер</td></tr>
-<tr><td>02 · Архитектура продукта</td><td>7 уроков: структура хранилища, конвейер генерации, связи и MOC, пресет графа, контроль качества</td></tr>
-<tr><td>03 · Оплата и выдача</td><td>6 уроков: цены, подключение Robokassa, автовыдача, правовой каркас, возвраты, юнит-экономика</td></tr>
-<tr><td>04 · Безликая дистрибуция</td><td>7 уроков: съёмка экрана, хуки, воронка «коммент → директ», батч-производство, календарь запуска</td></tr>
-<tr><td>Промпты и шаблоны</td><td>3 готовых промпта для генерации уроков, шаблон урока и шаблон продающего текста</td></tr>
-<tr><td>Документы</td><td>чек-лист самозанятого, шаблон публичной оферты, шаблон политики возврата</td></tr>
-</table>
+<p class="sub">Четыре модуля, промпты, шаблоны и правовой блок. Каждый урок заканчивается чек-листом, который закрывается сегодня.</p>
+<div class="grid g2">
+<div class="card"><span class="num">01 · NICHE</span><h3>Ниша и оффер</h3><p>6 уроков: три фильтра темы, матрица оценки идей, проверка спроса без рекламы, разбор конкурентов, анатомия оффера из семи блоков.</p></div>
+<div class="card"><span class="num">02 · PRODUCT</span><h3>Архитектура продукта</h3><p>7 уроков: структура хранилища, конвейер генерации уроков, связи и MOC, пресет графа, производство ассетов, контроль качества.</p></div>
+<div class="card"><span class="num">03 · CHECKOUT</span><h3>Оплата и выдача</h3><p>6 уроков: матрица цен, подключение Robokassa, автоматическая выдача без сбора персональных данных, правовой каркас, возвраты, юнит-экономика.</p></div>
+<div class="card"><span class="num">04 · DISTRIBUTION</span><h3>Безликая дистрибуция</h3><p>7 уроков: съёмка экрана, девять формул хуков, воронка «коммент → директ», батч из десяти роликов, календарь запуска с гейтами.</p></div>
 </div>
+<div class="grid g3" style="margin-top:14px">
+<div class="card"><h3>3 промпта</h3><p>Генерация карты уроков, текстов и второй проход-усилитель слабых файлов.</p></div>
+<div class="card"><h3>2 шаблона</h3><p>Каркас урока и каркас продающего текста с нормами плотности.</p></div>
+<div class="card"><h3>3 документа</h3><p>Чек-лист самозанятого, шаблон оферты, шаблон политики возврата.</p></div>
+</div>
+</div></section>
 
-<div class="card">
+<div class="stripes"><div class="wrap"><section id="pricing" style="padding:64px 0">
 <h2>Тарифы</h2>
-<div class="grid">
+<p class="sub">Один раз купили — разбираетесь и собираете под свою тему. Обновления идут с версией архива.</p>
+<div class="plans">
+<div class="plan hot"><span class="tag">Выбирают чаще</span>
+<h3 style="font-family:var(--font);margin:0;font-size:17px;font-weight:600">Vault</h3>
+<div class="price">2 490 <small>₽</small></div>
+<p class="muted" style="margin:0 0 4px;font-size:14px">Хранилище и документы</p>
+<ul><li>37 файлов базы знаний</li><li>пресет графа Obsidian</li><li>шаблон урока и продающего текста</li><li>оферта и политика возврата</li><li>доступ по персональной ссылке</li></ul>
+<a class="btn" href="checkout.html">Купить Vault</a>
+</div>
+<div class="plan">
+<h3 style="font-family:var(--font);margin:0;font-size:17px;font-weight:600">Vault + Engine</h3>
+<div class="price">6 900 <small>₽</small></div>
+<p class="muted" style="margin:0 0 4px;font-size:14px">Продукт и производство</p>
+<ul><li>всё из тарифа Vault</li><li>скрипты сборки и валидации базы</li><li>сервер приёма оплаты и выдачи</li><li>инструкции по развёртыванию</li><li>обновления 6 месяцев</li></ul>
+<a class="btn ghost" href="checkout.html">Купить Vault + Engine</a>
+</div>
+</div>
+</div></div></div>
+
+<section id="how"><div class="wrap">
+<h2>Как это работает</h2>
+<p class="sub">Три шага, каждый занимает вечер, а не месяц.</p>
+<div class="steps">
+<div class="step"><div><h3>Собираете базу под свою тему</h3><p>Берёте каркас из 26 уроков и заменяете содержание своим: свои примеры, свои чек-листы, свои шаблоны. Структура, связи и граф остаются.</p></div></div>
+<div class="step"><div><h3>Подключаете оплату</h3><p>Магазин Robokassa, две пары ключей, сервер с проверкой подписи. Покупатель платит картой или через СБП и получает персональную ссылку на архив.</p></div></div>
+<div class="step"><div><h3>Снимаете ролики без лица</h3><p>Десять сценариев на две недели, титры до семи слов, воронка «коммент → директ → лендинг». Метрики-гейты показывают, что чинить: хук, оффер или цену.</p></div></div>
+</div>
+</div></section>
+
+<div class="stripes"><div class="wrap"><section style="padding:64px 0">
+<h2>Возврат и вопросы</h2>
+<div class="grid g2">
 <div>
-<h3>Vault</h3>
-<div class="price">2 490 ₽</div>
-<ul><li>37 файлов базы знаний</li><li>настройки графа Obsidian</li><li>шаблоны урока и продающего текста</li><li>оферта и политика возврата</li></ul>
-<p><a class="btn" href="checkout.html">Купить Vault</a></p>
+<details open><summary>Какие условия возврата</summary><p>14 календарных дней с момента оплаты, если архив не открывается, состав не соответствует описанию или доступ не был предоставлен. Порядок — в <a href="legal/refund.html">политике возврата</a>.</p></details>
+<details><summary>Это курс или база знаний</summary><p>База знаний в формате Obsidian: файлы, шаблоны, документы. Видеоуроков нет, есть процедуры и чек-листы.</p></details>
+<details><summary>Нужен ли опыт</summary><p>Нет. Первый результат — за 15 минут по уроку «Быстрый старт».</p></details>
+<details><summary>Гарантируете ли доход</summary><p>Нет. Продавец не гарантирует прибыль или коммерческий результат: продукт — это инструмент, а не обещание.</p></details>
 </div>
-<div>
-<h3>Vault + Engine</h3>
-<div class="price">6 900 ₽</div>
-<ul><li>всё из тарифа Vault</li><li>скрипты сборки и валидации базы</li><li>сервер приёма оплаты и выдачи файлов</li><li>инструкции по развёртыванию</li><li>обновления 6 месяцев</li></ul>
-<p><a class="btn ghost" href="checkout.html">Купить Vault + Engine</a></p>
+<div class="card" style="height:100%">
+<h3>Оплата и выдача</h3>
+<p style="margin-bottom:14px">Карты «Мир», СБП через Robokassa. После подтверждения платежа формируется персональная ссылка на скачивание — действует 72 часа.</p>
+<p style="margin-bottom:14px">Чек приходит по 54-ФЗ. Персональные данные не собираются.</p>
+<a class="btn" href="checkout.html">Перейти к оплате</a>
 </div>
 </div>
-</div>
-
-<div class="card">
-<h2>Как вы получаете товар</h2>
-<ol>
-<li>Оплата картой или через СБП на защищённой странице Robokassa.</li>
-<li>После подтверждения платежа формируется персональная ссылка на скачивание архива.</li>
-<li>Ссылка действует 72 часа. Архив распаковывается в любую папку, открывается в Obsidian как хранилище.</li>
-</ol>
-<p class="muted">Ссылка персональная: она не публикуется и не передаётся третьим лицам.</p>
-</div>
-
-<div class="card">
-<h2>Возврат</h2>
-<p>Запрос принимается в течение 14 календарных дней с момента оплаты, если архив не открывается, состав файлов не соответствует описанию или доступ не был предоставлен. Порядок описан в <a href="legal/refund.html">политике возврата</a>.</p>
-</div>
-
-<div class="card">
-<h2>Частые вопросы</h2>
-<h3>Нужен ли опыт в инфобизнесе</h3><p>Нет. Все шаги описаны процедурами: выбор темы, сборка базы, подключение оплаты, съёмка роликов.</p>
-<h3>Это курс?</h3><p>Нет. Это рабочая база знаний в Obsidian с шаблонами и документами, которую вы применяете к своей теме.</p>
-<h3>Гарантируете ли вы доход</h3><p>Нет. Продавец не гарантирует прибыль или конкретный коммерческий результат.</p>
-</div>
-<footer>
-<h2>Реквизиты и контакты</h2>
+</section></div></div>
+<footer><div class="wrap">
+<div class="foot-links"><a href="legal/offer.html">Публичная оферта</a><a href="legal/refund.html">Политика возврата</a><a href="checkout.html">Оплата</a><a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a></div>
 <table>
-<tr><td>Продавец</td><td>Морозов Дмитрий Сергеевич, плательщик налога на профессиональный доход (самозанятый)</td></tr>
+<tr><td>Продавец</td><td>Морозов Дмитрий Сергеевич — плательщик налога на профессиональный доход (самозанятый)</td></tr>
 <tr><td>ИНН</td><td>511590065786</td></tr>
 <tr><td>E-mail</td><td><a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a></td></tr>
-<tr><td>Документы</td><td><a href="legal/offer.html">Публичная оферта</a> · <a href="legal/refund.html">Политика возврата</a></td></tr>
-<tr><td>Оплата</td><td>банковские карты «Мир», СБП (через Robokassa)</td></tr>
+<tr><td>Оплата</td><td>банковские карты «Мир», СБП — через Robokassa</td></tr>
+<tr><td>Выдача</td><td>персональная ссылка на архив, действует 72 часа</td></tr>
 </table>
-<p class="muted">Товар цифровой: архив файлов передаётся ссылкой. Персональные данные не собираются, кроме данных, необходимых для формирования чека.</p>
-</footer>
-</div></body></html>
+<p class="note">Товар цифровой. Персональные данные не собираются, кроме необходимых для формирования чека. Продавец не гарантирует доход или коммерческий результат.</p>
+</div></footer>
+</body></html>
