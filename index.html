@@ -1,108 +1,576 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vaultforge — система безликих цифровых продуктов</title>
 <meta name="description" content="База знаний в Obsidian: как собрать цифровой продукт, подключить оплату и продавать без лица и блога. 37 файлов, 26 уроков, шаблоны и документы.">
+<meta name="theme-color" content="#050509">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308080C'/%3E%3Ccircle cx='32' cy='33' r='13' fill='%234B50E4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%23C6FF3D'/></svg>">
-</head><body>
-<header><div class="wrap nav">
-<a class="logo" href="/"><i></i>VAULTFORGE</a>
-<nav style="display:flex;gap:22px;flex-wrap:wrap">
-<a href="#inside">Что внутри</a><a href="#pricing">Тарифы</a><a href="#how">Как это работает</a><a href="legal/offer.html">Оферта</a><a href="legal/refund.html">Возврат</a>
-</nav></div></header>
-<div class="wrap hero">
-<div class="badge"><b>Vaultforge</b> · система, а не курс</div>
-<h1>Продукт, который <em>продаёт</em> себя сам</h1>
-<p class="lead">37 файлов в Obsidian: методология, шаблоны, оферта и политика возврата. Собираете базу знаний по своей теме, подключаете оплату и снимаете ролики — без лица, блога и созвонов.</p>
-<div class="cta">
-<a class="btn" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Купить Vault — 2 490 ₽</a>
-<a class="btn ghost" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=pro">Vault + Engine — 6 900 ₽</a>
-</div>
-<div class="stats">
-<div class="stat"><b>37</b><span>файлов в хранилище</span></div>
-<div class="stat"><b>26</b><span>уроков с чек-листами</span></div>
-<div class="stat"><b>4</b><span>модуля: ниша → продукт → оплата → трафик</span></div>
-<div class="stat"><b>15 мин</b><span>до первого действия</span></div>
-</div>
-</div>
+</head>
+<body>
 
-<div class="stripes"><div class="wrap" style="padding:26px 24px">
-<p style="margin:0;color:var(--muted);font-size:14.5px">Никаких обещаний дохода. Внутри — процедуры: как выбрать угол, собрать базу, подключить Robokassa и выдавать файл по одноразовой ссылке.</p>
-</div></div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">VAULTFORGE</a>
+    <a class="btn-access" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">ПОЛУЧИТЬ ДОСТУП
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6"/></svg>
+    </a>
+  </div>
+</header>
 
-<section id="inside"><div class="wrap">
-<h2>Что внутри</h2>
-<p class="sub">Четыре модуля, промпты, шаблоны и правовой блок. Каждый урок заканчивается чек-листом, который закрывается сегодня.</p>
-<div class="grid g2">
-<div class="card"><span class="num">01 · NICHE</span><h3>Ниша и оффер</h3><p>6 уроков: три фильтра темы, матрица оценки идей, проверка спроса без рекламы, разбор конкурентов, анатомия оффера из семи блоков.</p></div>
-<div class="card"><span class="num">02 · PRODUCT</span><h3>Архитектура продукта</h3><p>7 уроков: структура хранилища, конвейер генерации уроков, связи и MOC, пресет графа, производство ассетов, контроль качества.</p></div>
-<div class="card"><span class="num">03 · CHECKOUT</span><h3>Оплата и выдача</h3><p>6 уроков: матрица цен, подключение Robokassa, автоматическая выдача без сбора персональных данных, правовой каркас, возвраты, юнит-экономика.</p></div>
-<div class="card"><span class="num">04 · DISTRIBUTION</span><h3>Безликая дистрибуция</h3><p>7 уроков: съёмка экрана, девять формул хуков, воронка «коммент → директ», батч из десяти роликов, календарь запуска с гейтами.</p></div>
-</div>
-<div class="grid g3" style="margin-top:14px">
-<div class="card"><h3>3 промпта</h3><p>Генерация карты уроков, текстов и второй проход-усилитель слабых файлов.</p></div>
-<div class="card"><h3>2 шаблона</h3><p>Каркас урока и каркас продающего текста с нормами плотности.</p></div>
-<div class="card"><h3>3 документа</h3><p>Чек-лист самозанятого, шаблон оферты, шаблон политики возврата.</p></div>
-</div>
-</div></section>
+<main id="main">
 
-<div class="stripes"><div class="wrap"><section id="pricing" style="padding:64px 0">
-<h2>Тарифы</h2>
-<p class="sub">Один раз купили — разбираетесь и собираете под свою тему. Обновления идут с версией архива.</p>
-<div class="plans">
-<div class="plan hot"><span class="tag">Выбирают чаще</span>
-<h3 style="font-family:var(--font);margin:0;font-size:17px;font-weight:600">Vault</h3>
-<div class="price">2 490 <small>₽</small></div>
-<p class="muted" style="margin:0 0 4px;font-size:14px">Хранилище и документы</p>
-<ul><li>37 файлов базы знаний</li><li>пресет графа Obsidian</li><li>шаблон урока и продающего текста</li><li>оферта и политика возврата</li><li>доступ по персональной ссылке</li></ul>
-<a class="btn" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Купить Vault</a>
-</div>
-<div class="plan">
-<h3 style="font-family:var(--font);margin:0;font-size:17px;font-weight:600">Vault + Engine</h3>
-<div class="price">6 900 <small>₽</small></div>
-<p class="muted" style="margin:0 0 4px;font-size:14px">Продукт и производство</p>
-<ul><li>всё из тарифа Vault</li><li>скрипты сборки и валидации базы</li><li>сервер приёма оплаты и выдачи</li><li>инструкции по развёртыванию</li><li>обновления 6 месяцев</li></ul>
-<a class="btn ghost" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=pro">Купить Vault + Engine</a>
-</div>
-</div>
-</div></div></div>
+  <section class="hero" aria-labelledby="t-hero">
+    <div class="hero-beams" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="eyebrow reveal">VAULTFORGE / СИСТЕМА БЕЗЛИКИХ ЦИФРОВЫХ ПРОДУКТОВ</p>
+      <h1 class="display reveal" id="t-hero">Собери свой цифровой продукт. <em>Продавай без лица.</em></h1>
+      <p class="lead reveal">Соберите цифровой продукт в Obsidian, а затем научитесь продавать его в Instagram, не показывая лица.</p>
+      <a class="btn-pill reveal" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Получить Vault — 2 490 ₽
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+      <p class="micro reveal">Единоразовая оплата · Мгновенный доступ · Уроки остаются навсегда</p>
+      <a class="scroll-link reveal" href="#inside">Посмотрите, что внутри
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg>
+      </a>
+            <div class="device device--hero">
+        <div class="device-frame">
+          <div class="device-chrome"><span class="device-dots"><i></i><i></i><i></i></span><span class="device-label">vaultforge-vault — Obsidian</span></div>
+          <div class="device-body">
+            <div class="om-rail">
+              <span class="om-ico">▤</span>
+              <span class="om-ico">⌕</span>
+              <span class="om-ico is-active">◈</span>
+              <span class="om-ico">☆</span>
+              <span class="om-ico">⌗</span>
+            </div>
+            <div class="om-side">
+              <div class="om-side-head">vaultforge-vault</div>
+              <ul class="om-tree">
+                <li class="om-folder">▸ 00_Start_Here
+                  <ul>
+                    <li class="is-active">Start Here</li>
+                    <li>MOC Navigation</li>
+                    <li>Quick Start 15 Min</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 01_Niche_and_Offer
+                  <ul>
+                    <li>Profit Angle Formula</li>
+                    <li>Offer Anatomy</li>
+                    <li>Niche Narrowing Matrix</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 02_Product_Architecture
+                  <ul>
+                    <li>Vault Blueprint</li>
+                    <li>Lesson Generation Pipeline</li>
+                    <li>Interlinking and MOC</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 03_Checkout_and_Delivery
+                  <ul>
+                    <li>Pricing Matrix</li>
+                    <li>Payment Integration</li>
+                    <li>Automated Fulfillment</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 04_Faceless_Distribution
+                  <ul>
+                    <li>Viral Hook Formulas</li>
+                    <li>Comment To DM Funnel</li>
+                    <li>Launch Calendar</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 05_Prompts_Library
+                  <ul>
+                    <li>Course Architect Prompt</li>
+                    <li>Content Generator Patch</li>
+                    <li>DeepSeek Flash Engine</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 06_Templates
+                  <ul>
+                    <li>Template Lesson</li>
+                    <li>Template Sales Copy</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 07_Legal
+                  <ul>
+                    <li>Self Employed Checklist</li>
+                    <li>Public Offer Template</li>
+                    <li>Refund Policy Template</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="om-graph">
+              <img src="assets/vault-graph.svg" alt="Граф связей хранилища Vaultforge">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="how"><div class="wrap">
-<h2>Как это работает</h2>
-<p class="sub">Три шага, каждый занимает вечер, а не месяц.</p>
-<div class="steps">
-<div class="step"><div><h3>Собираете базу под свою тему</h3><p>Берёте каркас из 26 уроков и заменяете содержание своим: свои примеры, свои чек-листы, свои шаблоны. Структура, связи и граф остаются.</p></div></div>
-<div class="step"><div><h3>Подключаете оплату</h3><p>Магазин Robokassa, две пары ключей, сервер с проверкой подписи. Покупатель платит картой или через СБП и получает персональную ссылку на архив.</p></div></div>
-<div class="step"><div><h3>Снимаете ролики без лица</h3><p>Десять сценариев на две недели, титры до семи слов, воронка «коммент → директ → лендинг». Метрики-гейты показывают, что чинить: хук, оффер или цену.</p></div></div>
-</div>
-</div></section>
+  <section class="manifesto" aria-labelledby="t-manifesto">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--dash reveal">ПОЧЕМУ VAULTFORGE СУЩЕСТВУЕТ</p>
+      <h2 class="h2-sans reveal" id="t-manifesto">Информация никогда не была проблемой. <span class="serif-italic">Структура — была.</span></h2>
+      <p class="lead reveal">Советов про ИИ, цифровые продукты, Obsidian и Instagram сколько угодно. Сложность в другом: превратить эти разрозненные идеи в один понятный путь, по которому действительно можно идти.</p>
+      <p class="lead reveal">Vaultforge соединяет ключевые шаги: выбрать, что создавать, собрать это по понятной структуре, а затем связать продукт, оплату и безликий контент в один рабочий процесс.</p>
+      <h3 class="manifesto-h3 reveal">Соберите то, что принадлежит вам.</h3>
+      <ul class="points">
+        <li class="point reveal">Выберите тему, в которой разбираетесь, и проблему, которую продукт помогает решить.</li>
+        <li class="point reveal">Превратите свои знания в уроки и материалы, которыми люди реально пользуются.</li>
+        <li class="point reveal">Создайте свой оффер и зарабатывайте на своих покупателях. Без рекрутинга и перепродажи Vaultforge.</li>
+      </ul>
+    </div>
+  </section>
 
-<div class="stripes"><div class="wrap"><section style="padding:64px 0">
-<h2>Возврат и вопросы</h2>
-<div class="grid g2">
-<div>
-<details open><summary>Какие условия возврата</summary><p>14 календарных дней с момента оплаты, если архив не открывается, состав не соответствует описанию или доступ не был предоставлен. Порядок — в <a href="legal/refund.html">политике возврата</a>.</p></details>
-<details><summary>Это курс или база знаний</summary><p>База знаний в формате Obsidian: файлы, шаблоны, документы. Видеоуроков нет, есть процедуры и чек-листы.</p></details>
-<details><summary>Нужен ли опыт</summary><p>Нет. Первый результат — за 15 минут по уроку «Быстрый старт».</p></details>
-<details><summary>Гарантируете ли доход</summary><p>Нет. Продавец не гарантирует прибыль или коммерческий результат: продукт — это инструмент, а не обещание.</p></details>
-</div>
-<div class="card" style="height:100%">
-<h3>Оплата и выдача</h3>
-<p style="margin-bottom:14px">Карты «Мир», СБП через Robokassa. После подтверждения платежа формируется персональная ссылка на скачивание — действует 72 часа.</p>
-<p style="margin-bottom:14px">Чек приходит по 54-ФЗ. Персональные данные не собираются.</p>
-<a class="btn" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Перейти к оплате</a>
-</div>
-</div>
-</section></div></div>
-<footer><div class="wrap">
-<div class="foot-links"><a href="legal/offer.html">Публичная оферта</a><a href="legal/refund.html">Политика возврата</a><a href="checkout.html">Оплата</a><a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a></div>
-<table>
-<tr><td>Продавец</td><td>Морозов Дмитрий Сергеевич — плательщик налога на профессиональный доход (самозанятый)</td></tr>
-<tr><td>ИНН</td><td>511590065786</td></tr>
-<tr><td>E-mail</td><td><a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a></td></tr>
-<tr><td>Оплата</td><td>банковские карты «Мир», СБП — через Robokassa</td></tr>
-<tr><td>Выдача</td><td>персональная ссылка на архив, действует 72 часа</td></tr>
-</table>
-<p class="note">Товар цифровой. Персональные данные не собираются, кроме необходимых для формирования чека. Продавец не гарантирует доход или коммерческий результат.</p>
-</div></footer>
-</body></html>
+  <section class="section section--navy" aria-labelledby="t-get">
+    <div class="wrap">
+      <div class="section-head is-center">
+        <p class="eyebrow reveal">ЧТО ВЫ РЕАЛЬНО ПОЛУЧАЕТЕ</p>
+        <h2 class="h2-serif reveal" id="t-get">Понятный путь от идеи до своего продукта.</h2>
+        <p class="lead reveal">Vaultforge — практический набор в Obsidian: он показывает, как создать, запустить и продать свой цифровой продукт, шаг за шагом.</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-cell reveal">
+          <p class="stat-num">4</p>
+          <p class="stat-label">Модуля</p>
+        </div>
+        <div class="stat-cell reveal">
+          <p class="stat-num">26</p>
+          <p class="stat-label">Уроков с чек-листами</p>
+        </div>
+        <div class="stat-cell reveal">
+          <p class="stat-num">37</p>
+          <p class="stat-label">Файлов в архиве</p>
+        </div>
+        <div class="stat-cell reveal">
+          <p class="stat-num">5</p>
+          <p class="stat-label">Промптов и шаблонов</p>
+        </div>
+      </div>
+
+      <div class="module-cards">
+        <article class="module-card reveal">
+          <span class="num">01 / НИША</span>
+          <h3>Найдите направление</h3>
+          <p>Найдите нишу и превратите то, что знаете, в идею цифрового продукта.</p>
+        </article>
+        <article class="module-card reveal">
+          <span class="num">02 / СБОРКА</span>
+          <h3>Соберите продукт</h3>
+          <p>Соберите хранилище Obsidian с уроками, промптами и полезными материалами.</p>
+        </article>
+        <article class="module-card reveal">
+          <span class="num">03 / ПРОДАЖИ</span>
+          <h3>Настройте продажи</h3>
+          <p>Научитесь назначать цену, принимать оплату и передавать файл покупателю.</p>
+        </article>
+        <article class="module-card reveal">
+          <span class="num">04 / ТРАФИК</span>
+          <h3>Растите без лица</h3>
+          <p>Привлекайте покупателей через контент в Instagram и переписку в директе.</p>
+        </article>
+      </div>
+
+      <div class="links-row">
+        <a class="link-arrow reveal" href="#inside">Посмотреть реальный превью хранилища
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--navy2" id="inside" aria-labelledby="t-inside">
+    <div class="wrap">
+      <div class="section-head is-center">
+        <p class="eyebrow reveal">ЧТО ВНУТРИ</p>
+        <h2 class="h2-serif reveal" id="t-inside">Внутри хранилища</h2>
+        <p class="lead reveal">4 модуля, 26 уроков, промпты и шаблоны. Часть дополнительных файлов доступна только в тарифе Engine.</p>
+      </div>
+            <div class="device device--full">
+        <div class="device-frame">
+          <div class="device-chrome"><span class="device-dots"><i></i><i></i><i></i></span><span class="device-label">vaultforge-vault — Obsidian</span></div>
+          <div class="device-body">
+            <div class="om-rail">
+              <span class="om-ico">▤</span>
+              <span class="om-ico">⌕</span>
+              <span class="om-ico is-active">◈</span>
+              <span class="om-ico">☆</span>
+              <span class="om-ico">⌗</span>
+            </div>
+            <div class="om-side">
+              <div class="om-side-head">vaultforge-vault</div>
+              <ul class="om-tree">
+                <li class="om-folder">▸ 00_Start_Here
+                  <ul>
+                    <li class="is-active">Start Here</li>
+                    <li>MOC Navigation</li>
+                    <li>Quick Start 15 Min</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 01_Niche_and_Offer
+                  <ul>
+                    <li>Profit Angle Formula</li>
+                    <li>Offer Anatomy</li>
+                    <li>Niche Narrowing Matrix</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 02_Product_Architecture
+                  <ul>
+                    <li>Vault Blueprint</li>
+                    <li>Lesson Generation Pipeline</li>
+                    <li>Interlinking and MOC</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 03_Checkout_and_Delivery
+                  <ul>
+                    <li>Pricing Matrix</li>
+                    <li>Payment Integration</li>
+                    <li>Automated Fulfillment</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 04_Faceless_Distribution
+                  <ul>
+                    <li>Viral Hook Formulas</li>
+                    <li>Comment To DM Funnel</li>
+                    <li>Launch Calendar</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 05_Prompts_Library
+                  <ul>
+                    <li>Course Architect Prompt</li>
+                    <li>Content Generator Patch</li>
+                    <li>DeepSeek Flash Engine</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 06_Templates
+                  <ul>
+                    <li>Template Lesson</li>
+                    <li>Template Sales Copy</li>
+                  </ul>
+                </li>
+                <li class="om-folder">▸ 07_Legal
+                  <ul>
+                    <li>Self Employed Checklist</li>
+                    <li>Public Offer Template</li>
+                    <li>Refund Policy Template</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="om-graph">
+              <img src="assets/vault-graph.svg" alt="Граф связей хранилища Vaultforge" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="preview-note reveal">Реальный превью продукта. Дополнения уровня Engine видны на скриншоте и не входят в тариф Vault за 2 490 ₽.</p>
+
+      <div class="modules">
+        <div class="module-row reveal">
+          <div class="module-num">01</div>
+          <p><b class="module-head">Старт за 15 минут</b> — <span class="module-desc">Первый результат: как открыть архив, пройти урок и закрыть первый чек-лист сегодня же.</span></p>
+        </div>
+        <div class="module-row reveal">
+          <div class="module-num">02</div>
+          <p><b class="module-head">26 уроков с чек-листами</b> — <span class="module-desc">Каждый урок заканчивается действием, которое можно закрыть в тот же вечер.</span></p>
+        </div>
+        <div class="module-row reveal">
+          <div class="module-num">03</div>
+          <p><b class="module-head">Шаблоны и промпты</b> — <span class="module-desc">Каркас урока, каркас продающего текста и промпты для генерации содержания.</span></p>
+        </div>
+        <div class="module-row reveal">
+          <div class="module-num">04</div>
+          <p><b class="module-head">Правовой блок</b> — <span class="module-desc">Публичная оферта, политика возврата и чек-лист самозанятого.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--navy" id="flow" aria-labelledby="t-flow">
+    <div class="wrap">
+      <div class="section-head is-center">
+        <p class="eyebrow reveal">ОТ КОНТЕНТА ДО ОПЛАТЫ</p>
+        <h2 class="h2-serif reveal" id="t-flow">Посмотрите, как всё связано.</h2>
+        <p class="lead reveal">От безликих Reels до продаж цифрового продукта. Посмотрите, как связаны шаги и как собрать свою систему.</p>
+      </div>
+
+      <div class="flow">
+        <div class="flow-step reveal">
+          <div class="flow-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M10.4 8.8v6.4l5.2-3.2z"/>
+            </svg>
+          </div>
+          <div class="flow-body">
+            <span class="flow-num">01</span>
+            <h3 class="flow-title">Ролик</h3>
+            <p class="flow-sub">Публикуйте безликий контент о своём продукте.</p>
+          </div>
+        </div>
+
+        <div class="flow-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14m0 0 6-6m-6 6-6-6"/>
+          </svg>
+        </div>
+
+        <div class="flow-step reveal">
+          <div class="flow-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+            </svg>
+          </div>
+          <div class="flow-body">
+            <span class="flow-num">02</span>
+            <h3 class="flow-title">Комментарий VAULT</h3>
+            <p class="flow-sub">Заинтересованный зритель пишет ключевое слово.</p>
+          </div>
+        </div>
+
+        <div class="flow-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14m0 0 6-6m-6 6-6-6"/>
+          </svg>
+        </div>
+
+        <div class="flow-step reveal">
+          <div class="flow-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4.5" width="20" height="15" rx="2.5"/>
+              <path d="m3 7 8.4 5.4a1.2 1.2 0 0 0 1.2 0L21 7"/>
+            </svg>
+          </div>
+          <div class="flow-body">
+            <span class="flow-num">03</span>
+            <h3 class="flow-title">Директ</h3>
+            <p class="flow-sub">Автоответ отправляет ссылку на страницу продажи.</p>
+          </div>
+        </div>
+
+        <div class="flow-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14m0 0 6-6m-6 6-6-6"/>
+          </svg>
+        </div>
+
+        <div class="flow-step reveal">
+          <div class="flow-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="2.5"/>
+              <path d="M2 10h20"/>
+            </svg>
+          </div>
+          <div class="flow-body">
+            <span class="flow-num">04</span>
+            <h3 class="flow-title">Оплата</h3>
+            <p class="flow-sub">Покупатель платит в Robokassa и получает файл.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--grid" id="after" aria-labelledby="t-after">
+    <div class="wrap">
+      <div class="section-head is-center">
+        <p class="eyebrow reveal">ОТ ОПЛАТЫ ДО ФАЙЛА</p>
+        <h2 class="h2-serif reveal" id="t-after">Что происходит после оплаты.</h2>
+        <p class="lead reveal">Оплата, проверка подписи и выдача файла работают автоматически — без переписки и ручных действий.</p>
+      </div>
+
+      <div class="shot reveal" role="img" aria-label="Страница выдачи после оплаты: ссылка на архив сформирована и действует 72 часа">
+        <div class="shot-bar">vaultforge-pay.duflyt.workers.dev/pay/ok</div>
+        <div class="shot-body">
+          <div class="shot-check">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m4.5 12.5 5 5 10-11"/>
+            </svg>
+          </div>
+          <p class="shot-title">Оплата получена</p>
+          <p class="shot-sub">Ссылка на архив сформирована автоматически после подтверждения платежа.</p>
+          <span class="shot-btn">Скачать Vaultforge_v1.0.0.zip</span>
+          <p class="shot-meta">ссылка действует 72 часа</p>
+        </div>
+      </div>
+      <p class="preview-note reveal">Так выглядит страница выдачи: персональная ссылка формируется после подтверждения платежа и действует 72 часа.</p>
+    </div>
+  </section>
+
+  <section class="section section--grid" id="pricing" aria-labelledby="t-pricing">
+    <div class="wrap">
+      <div class="section-head is-center">
+        <p class="eyebrow reveal">ВЫБЕРИТЕ ФОРМАТ</p>
+        <h2 class="h2-serif reveal" id="t-pricing">Выберите подходящий набор.</h2>
+        <p class="lead reveal">Начните с полного набора в Vault. Возьмите Engine, если нужны готовые системы сборки, сервер оплаты и документация по развёртыванию.</p>
+      </div>
+
+      <div class="plans">
+        <article class="plan plan--featured reveal">
+          <div class="plan-head">
+            <h3 class="plan-name">Vault + Engine</h3>
+            <span class="plan-tag">ИНСТРУМЕНТЫ + СЕРВЕР</span>
+          </div>
+          <p class="plan-desc">Всё из Vault плюс инструменты продаж и выдачи с документацией.</p>
+          <div class="plan-price"><span class="cur">₽</span>6 900</div>
+          <p class="plan-sub">Единоразовая оплата · Без подписки</p>
+          <a class="btn-pill" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=pro">Получить Engine — 6 900 ₽
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <p class="plan-micro">Мгновенный доступ после оплаты</p>
+          <p class="plan-divider">ВСЁ ИЗ VAULT</p>
+          <ul class="checklist">
+            <li>Сборщик и валидатор базы</li>
+            <li>Сервер приёма оплаты и выдачи</li>
+            <li>Инструкции по развёртыванию</li>
+            <li>Обновления 6 месяцев</li>
+            <li>37 файлов базы знаний</li>
+          </ul>
+        </article>
+
+        <article class="plan reveal">
+          <div class="plan-head">
+            <h3 class="plan-name">Vault</h3>
+          </div>
+          <p class="plan-desc">Научитесь создавать и продавать свой цифровой продукт в Obsidian.</p>
+          <div class="plan-price"><span class="cur">₽</span>2 490</div>
+          <p class="plan-sub">Единоразовая оплата · Без подписки</p>
+          <a class="btn-pill" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Получить Vault — 2 490 ₽
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <p class="plan-micro">Мгновенный доступ после оплаты</p>
+          <p class="plan-divider">VAULT ВКЛЮЧАЕТ</p>
+          <ul class="checklist">
+            <li>4 модуля</li>
+            <li>26 уроков</li>
+            <li>37 файлов</li>
+            <li>3 промпта</li>
+            <li>2 шаблона</li>
+            <li>Полная библиотека материалов</li>
+            <li>Карта навигации / MOC</li>
+            <li>Инструкция по оплате и Robokassa</li>
+            <li>Доступ навсегда</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--navy2" id="faq" aria-labelledby="t-faq">
+    <div class="wrap">
+      <div class="section-head is-center">
+        <p class="eyebrow reveal">ВОПРОСЫ</p>
+        <h2 class="h2-serif reveal" id="t-faq">Коротко о главном</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq-item reveal">
+          <summary>Какие условия возврата</summary>
+          <p>14 календарных дней с момента оплаты, если архив не открывается, состав не соответствует описанию или доступ не был предоставлен. Порядок — в политике возврата.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Это курс или база знаний</summary>
+          <p>База знаний в формате Obsidian: файлы, шаблоны, документы. Видеоуроков нет — есть процедуры и чек-листы.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Нужен ли опыт</summary>
+          <p>Нет. Первый результат — за 15 минут по уроку «Старт за 15 минут».</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Гарантируете ли доход</summary>
+          <p>Нет. Продавец не гарантирует прибыль или коммерческий результат: продукт — инструмент, а не обещание.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Как проходит оплата</summary>
+          <p>Карты «Мир» и СБП через Robokassa. После подтверждения платежа формируется персональная ссылка на скачивание, действует 72 часа. Чек приходит по 54-ФЗ.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final" aria-labelledby="t-cta">
+    <div class="wrap">
+      <h2 class="display reveal" id="t-cta">Соберите своё цифровое хранилище.</h2>
+      <p class="lead reveal">37 файлов, 26 уроков и шаблоны — всё, чтобы пройти путь от идеи до первой продажи.</p>
+      <a class="btn-pill reveal" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Получить Vault — 2 490 ₽
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+      <p class="micro reveal">Единоразовая оплата · Мгновенный доступ · Возврат 14 дней</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <p class="footer-brand">VAULTFORGE</p>
+      <nav class="footer-links" aria-label="Документы и оплата">
+        <a href="legal/offer.html">Публичная оферта</a>
+        <a href="legal/refund.html">Политика возврата</a>
+        <a href="checkout.html">Оплата</a>
+        <a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a>
+      </nav>
+    </div>
+    <dl class="req-list">
+      <div><dt>Продавец</dt><dd>Морозов Дмитрий Сергеевич, плательщик НПД (самозанятый)</dd></div>
+      <div><dt>ИНН</dt><dd>511590065786</dd></div>
+      <div><dt>E-mail</dt><dd><a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a></dd></div>
+      <div><dt>Оплата</dt><dd>карты «Мир», СБП через Robokassa</dd></div>
+      <div><dt>Выдача</dt><dd>персональная ссылка на архив, 72 часа</dd></div>
+    </dl>
+    <p class="footer-note">Товар цифровой. Персональные данные не собираются, кроме необходимых для формирования чека. Продавец не гарантирует доход или коммерческий результат.</p>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js-reveal');
+  (function () {
+    var items = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function show(el) { el.classList.add('is-visible'); }
+    function showAll() { items.forEach(show); }
+
+    if (reduce.matches || !('IntersectionObserver' in window)) { showAll(); return; }
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { show(entry.target); io.unobserve(entry.target); }
+      });
+    }, { rootMargin: '0px 0px 10% 0px', threshold: 0.05 });
+
+    items.forEach(function (el) { io.observe(el); });
+
+    // страховка: при быстром скролле IntersectionObserver может пропустить элемент
+    var queued = false;
+    function sweep() {
+      queued = false;
+      for (var i = 0; i < items.length; i++) {
+        var el = items[i];
+        if (el.classList.contains('is-visible')) continue;
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) { show(el); io.unobserve(el); }
+      }
+    }
+    function queue() { if (!queued) { queued = true; window.requestAnimationFrame(sweep); } }
+
+    window.addEventListener('scroll', queue, { passive: true });
+    window.addEventListener('resize', queue);
+    sweep();
+  })();
+</script>
+</body>
+</html>

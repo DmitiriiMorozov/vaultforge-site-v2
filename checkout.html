@@ -1,44 +1,121 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Оплата — Vaultforge</title>
+<meta name="description" content="Оплата Vaultforge: тарифы Vault — 2 490 ₽ и Vault + Engine — 6 900 ₽, карты «Мир» и СБП через Robokassa, персональная ссылка на архив после подтверждения платежа, чек по 54-ФЗ.">
+<meta name="theme-color" content="#050509">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308080C'/%3E%3Ccircle cx='32' cy='33' r='13' fill='%234B50E4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="assets/style.css">
-</head><body>
-<header><div class="wrap nav">
-<a class="logo" href="/"><i></i>VAULTFORGE</a>
-<nav style="display:flex;gap:22px;flex-wrap:wrap">
-<a href="/#inside">Что внутри</a><a href="/#pricing">Тарифы</a><a href="legal/offer.html">Оферта</a><a href="legal/refund.html">Возврат</a>
-</nav></div></header>
-<div class="wrap" style="padding:64px 24px 40px">
-<h1 style="max-width:20ch">Оплата</h1>
-<p class="lead">Два тарифа, оплата картой «Мир» или через СБП. После подтверждения платежа вы получаете персональную ссылку на архив.</p>
-<div class="plans" style="margin-top:34px">
-<div class="plan hot"><span class="tag">Чаще берут</span>
-<h3 style="font-family:var(--font);margin:0;font-size:17px;font-weight:600">Vault</h3>
-<div class="price">2 490 <small>₽</small></div>
-<ul><li>37 файлов базы знаний</li><li>пресет графа Obsidian</li><li>шаблоны урока и текста</li><li>оферта и политика возврата</li></ul>
-<p class="note" style="margin:0 0 16px">Оплата картой или СБП через Robokassa.</p>
-<a class="btn" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Оплатить Vault — 2 490 ₽</a>
-</div>
-<div class="plan">
-<h3 style="font-family:var(--font);margin:0;font-size:17px;font-weight:600">Vault + Engine</h3>
-<div class="price">6 900 <small>₽</small></div>
-<ul><li>всё из тарифа Vault</li><li>скрипты сборки и валидации</li><li>сервер оплаты и выдачи</li><li>обновления 6 месяцев</li></ul>
-<p class="note" style="margin:0 0 16px">Для тех, кто хочет собирать базы потоком.</p>
-<a class="btn ghost" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=pro">Оплатить Vault + Engine — 6 900 ₽</a>
-</div>
-</div>
-<div class="card" style="margin-top:26px">
-<h3>Как проходит оплата</h3>
-<p style="margin-bottom:12px">1. Вы отправляете заявку с указанием тарифа. 2. В ответ приходит ссылка на защищённую страницу Robokassa. 3. После подтверждения платежа формируется персональная ссылка на архив, действующая 72 часа. Чек приходит по 54-ФЗ.</p>
-<p class="note">Оплата проходит через Robokassa. Ссылка на архив приходит сразу после оплаты и действует 72 часа. Условия возврата — в <a href="legal/refund.html">политике возврата</a>.</p>
-</div>
-</div>
-<footer><div class="wrap">
-<div class="foot-links"><a href="legal/offer.html">Публичная оферта</a><a href="legal/refund.html">Политика возврата</a><a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a></div>
-<table>
-<tr><td>Продавец</td><td>Морозов Дмитрий Сергеевич — плательщик НПД (самозанятый)</td></tr>
-<tr><td>ИНН</td><td>511590065786</td></tr>
-<tr><td>E-mail</td><td><a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a></td></tr>
-</table>
-</div></footer>
-</body></html>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">VAULTFORGE</a>
+    <a class="btn-access" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">ПОЛУЧИТЬ ДОСТУП
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section section--navy" aria-labelledby="t-checkout">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">ОПЛАТА</p>
+        <h1 class="display" id="t-checkout">Оплата</h1>
+        <p class="lead">Два тарифа, оплата картой «Мир» или через СБП. После подтверждения платежа вы получаете персональную ссылку на архив.</p>
+      </div>
+
+      <div class="plans">
+        <article class="plan plan--featured">
+          <div class="plan-head">
+            <h2 class="plan-name">Vault + Engine</h2>
+            <span class="plan-tag">ИНСТРУМЕНТЫ + СЕРВЕР</span>
+          </div>
+          <p class="plan-desc">Всё из Vault плюс инструменты продаж и выдачи с документацией.</p>
+          <div class="plan-price"><span class="cur">₽</span>6 900</div>
+          <p class="plan-sub">Единоразовая оплата · Без подписки</p>
+          <a class="btn-pill" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=pro">Оплатить Engine — 6 900 ₽
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <p class="plan-micro">Мгновенный доступ после оплаты</p>
+          <p class="plan-divider">ВСЁ ИЗ VAULT</p>
+          <ul class="checklist">
+            <li>Сборщик и валидатор базы</li>
+            <li>Сервер приёма оплаты и выдачи</li>
+            <li>Инструкции по развёртыванию</li>
+            <li>Обновления 6 месяцев</li>
+            <li>37 файлов базы знаний</li>
+          </ul>
+        </article>
+
+        <article class="plan">
+          <div class="plan-head">
+            <h2 class="plan-name">Vault</h2>
+          </div>
+          <p class="plan-desc">Научитесь создавать и продавать свой цифровой продукт в Obsidian.</p>
+          <div class="plan-price"><span class="cur">₽</span>2 490</div>
+          <p class="plan-sub">Единоразовая оплата · Без подписки</p>
+          <a class="btn-pill" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Оплатить Vault — 2 490 ₽
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <p class="plan-micro">Мгновенный доступ после оплаты</p>
+          <p class="plan-divider">VAULT ВКЛЮЧАЕТ</p>
+          <ul class="checklist">
+            <li>4 модуля</li>
+            <li>26 уроков</li>
+            <li>37 файлов</li>
+            <li>3 промпта</li>
+            <li>2 шаблона</li>
+            <li>Полная библиотека материалов</li>
+            <li>Карта навигации / MOC</li>
+            <li>Инструкция по оплате и Robokassa</li>
+            <li>Доступ навсегда</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--navy2" aria-labelledby="t-how-pay">
+    <div class="wrap-narrow">
+      <div class="info-card">
+        <h3 id="t-how-pay">Как проходит оплата</h3>
+        <p>1. Вы отправляете заявку с указанием тарифа. 2. В ответ приходит ссылка на защищённую страницу Robokassa. 3. После подтверждения платежа формируется персональная ссылка на архив, действующая 72 часа. Чек приходит по 54-ФЗ.</p>
+        <p>Оплата проходит через Robokassa. Ссылка на архив приходит сразу после оплаты и действует 72 часа. Условия возврата — в <a href="/legal/refund.html">политике возврата</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <p class="footer-brand">VAULTFORGE</p>
+      <nav class="footer-links" aria-label="Документы и оплата">
+        <a href="/legal/offer.html">Публичная оферта</a>
+        <a href="/legal/refund.html">Политика возврата</a>
+        <a href="/checkout.html">Оплата</a>
+        <a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a>
+      </nav>
+    </div>
+    <dl class="req-list">
+      <div><dt>Продавец</dt><dd>Морозов Дмитрий Сергеевич, плательщик НПД (самозанятый)</dd></div>
+      <div><dt>ИНН</dt><dd>511590065786</dd></div>
+      <div><dt>E-mail</dt><dd><a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a></dd></div>
+      <div><dt>Оплата</dt><dd>карты «Мир», СБП через Robokassa</dd></div>
+      <div><dt>Выдача</dt><dd>персональная ссылка на архив, 72 часа</dd></div>
+    </dl>
+    <p class="footer-note">Товар цифровой. Персональные данные не собираются, кроме необходимых для формирования чека. Продавец не гарантирует доход или коммерческий результат.</p>
+  </div>
+</footer>
+</body>
+</html>
