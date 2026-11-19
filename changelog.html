@@ -13,6 +13,12 @@
 <meta property="og:description" content="История версий Vaultforge: состав версии 1.0.0 от 18.11.2026 — 37 файлов, 26 уроков, промпты, шаблоны и юридические документы.">
 <meta property="og:url" content="https://vaultforge.ru/changelog.html">
 <meta property="og:image" content="https://vaultforge.ru/assets/vault-preview-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="693">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Что нового — Vaultforge">
+<meta name="twitter:description" content="История версий Vaultforge: состав версии 1.0.0, исправления 1.1.0 от 19.11.2026 и порядок оплаты.">
+<meta name="twitter:image" content="https://vaultforge.ru/assets/vault-preview-og.jpg">
 <link rel="canonical" href="https://vaultforge.ru/changelog.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308080C'/%3E%3Ccircle cx='32' cy='33' r='13' fill='%234B50E4'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/style.css">
@@ -24,7 +30,7 @@
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/">VAULTFORGE</a>
-    <a class="btn-access" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">ПОЛУЧИТЬ ДОСТУП
+    <a class="btn-access" href="checkout.html#plan-vault">ПОЛУЧИТЬ ДОСТУП
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6"/></svg>
     </a>
   </div>
@@ -38,13 +44,23 @@
         <h1 class="display" id="t-changelog">Что нового</h1>
         <p class="muted">История версий Vaultforge. Обновления версии публикуются на этой странице в течение 6 месяцев с момента покупки.</p>
 
+        <h2>Версия 1.1.0 от 19.11.2026</h2>
+        <p>Исправления сайта и порядка выдачи. Состав продуктов не изменился.</p>
+        <ul>
+          <li>форма оплаты отправляет данные методом POST, а не в адресной строке; добавлена обязательная отметка согласия на обработку персональных данных;</li>
+          <li>появилась страница «Восстановить ссылку» (<a href="/reissue.html">/reissue.html</a>): новую ссылку на архив можно получить по номеру заказа и e-mail, без переписки;</li>
+          <li>в политике обработки персональных данных перечислены все получатели данных, включая хостинг сайта и сервис приёма платежей, и указано, что отметка согласия хранится вместе с заказом;</li>
+          <li>добавлена страница 404, исправлена кнопка «Получить доступ» на страницах оферты, возврата и «Что нового»;</li>
+          <li>уточнены формулировки о чеке по НПД: чек формируется в приложении «Мой налог» и отправляется на e-mail, указанный при оплате, в день оплаты.</li>
+        </ul>
+
         <h2>19.11.2026 — порядок оплаты</h2>
-        <p>В форме оплаты появилось обязательное поле e-mail: на этот адрес приходит чек по налогу на профессиональный доход, а также повторная ссылка на архив, если файл потерялся. Как обрабатывается почта — в <a href="/legal/privacy.html">политике обработки персональных данных</a>. Состав продукта не изменился.</p>
+        <p>В форме оплаты появилось обязательное поле e-mail. Почта нужна, чтобы отправить чек по налогу на профессиональный доход и повторно выдать доступ к архиву, если файл потерялся. Чек формируется в приложении «Мой налог» и отправляется на указанный адрес в день оплаты; ссылку на архив можно восстановить самостоятельно на странице «Восстановить ссылку». Как обрабатывается почта — в <a href="/legal/privacy.html">политике обработки персональных данных</a>. Состав продукта не изменился.</p>
 
         <h2>Версия 1.0.0 от 18.11.2026</h2>
         <p>Первый публичный выпуск Vaultforge. Состав:</p>
         <ul>
-          <li>37 файлов в архиве хранилища Obsidian;</li>
+          <li>37 файлов базы знаний (в архиве 43 файла вместе со служебными файлами Obsidian);</li>
           <li>26 уроков с чек-листами;</li>
           <li>3 промпта;</li>
           <li>2 шаблона — каркас урока и каркас продающего текста;</li>
@@ -55,6 +71,7 @@
       <nav class="legal-nav" aria-label="Документы и разделы сайта">
         <a href="/">На главную</a>
         <a href="/checkout.html">Оплата</a>
+        <a href="/reissue.html">Восстановить ссылку</a>
         <a href="/legal/offer.html">Публичная оферта</a>
         <a href="/legal/refund.html">Политика возврата</a>
         <a href="/legal/privacy.html">Политика ПД</a>
@@ -72,6 +89,7 @@
         <a href="/legal/offer.html">Публичная оферта</a>
         <a href="/legal/refund.html">Политика возврата</a>
         <a href="/legal/privacy.html">Политика ПД</a>
+        <a href="/reissue.html">Восстановить ссылку</a>
         <a href="/checkout.html">Оплата</a>
         <a href="/changelog.html">Что нового</a>
         <a href="mailto:fallen843@yandex.ru">Контакты</a>

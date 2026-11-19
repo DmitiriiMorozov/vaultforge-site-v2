@@ -634,7 +634,7 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
 }
 .footer-brand{font-family:var(--font-sans);font-weight:600;font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--text)}
 .footer-links{display:flex;gap:28px;flex-wrap:wrap;font-size:14.5px}
-.footer-links a{color:var(--muted);transition:color .18s ease}
+.footer-links a{color:var(--muted);transition:color .18s ease;display:inline-flex;align-items:center;min-height:32px}
 .footer-links a:hover{color:var(--text)}
 .req-list{
   display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
@@ -675,7 +675,7 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
 .legal .muted{color:var(--muted-2);font-size:14px}
 .legal code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px;font-size:14px}
 .legal-nav{display:flex;gap:26px;flex-wrap:wrap;margin-top:52px;padding-top:24px;border-top:1px solid var(--line);font-size:14.5px}
-.legal-nav a{color:var(--muted)}
+.legal-nav a{color:var(--muted);display:inline-flex;align-items:center;min-height:32px}
 .legal-nav a:hover{color:var(--violet)}
 
 /* ---------- 20. Reveal ---------- */
@@ -770,4 +770,4 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
 .buy-consent a{color:var(--violet);text-decoration:underline;text-underline-offset:2px}
 .buy-form .btn-pill{width:100%;font-family:inherit;cursor:pointer}
 
-\n.buy-consent span{flex:1 1 auto;min-width:0}\n
+.buy-consent span{flex:1 1 auto;min-width:0}
