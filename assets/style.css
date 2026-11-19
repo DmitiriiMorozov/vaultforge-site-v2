@@ -281,6 +281,11 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
   margin:26px auto 0;max-width:64ch;text-align:center;
   font-size:13.5px;line-height:1.7;color:var(--muted-2);
 }
+.preview-note code{
+  font-family:var(--font-mono);font-size:.92em;letter-spacing:-.01em;
+  color:var(--text-2);background:rgba(255,255,255,.06);
+  padding:1px 6px;border-radius:5px;white-space:nowrap;
+}
 /* generic product screenshot (mock страницы выдачи) */
 .shot{
   margin:56px auto 0;max-width:940px;
