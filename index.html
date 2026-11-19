@@ -21,12 +21,39 @@
 <meta name="twitter:image" content="https://vaultforge.ru/assets/vault-preview-og.jpg">
 <link rel="canonical" href="https://vaultforge.ru/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308080C'/%3E%3Ccircle cx='32' cy='33' r='13' fill='%234B50E4'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Vaultforge",
+  "description": "База знаний в Obsidian: как собрать цифровой продукт, подключить оплату и продавать без лица и блога. 37 файлов, 26 уроков с чек-листами, промпты и шаблоны.",
+  "image": "https://vaultforge.ru/assets/vault-preview-og.jpg",
+  "brand": { "@type": "Brand", "name": "Vaultforge" },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Vault",
+      "url": "https://vaultforge.ru/checkout.html",
+      "price": "2490",
+      "priceCurrency": "RUB",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Vault + Engine",
+      "url": "https://vaultforge.ru/checkout.html",
+      "price": "6900",
+      "priceCurrency": "RUB",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+
+<a class="skip-link" href="#main">Перейти к содержанию</a>
 
 <header class="site-header">
   <div class="wrap">
@@ -48,7 +75,7 @@
       <a class="btn-pill reveal" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Получить Vault — 2 490 ₽
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <p class="micro reveal">Единоразовая оплата · Мгновенный доступ · Уроки остаются навсегда</p>
+      <p class="micro reveal">Единоразовая оплата · Мгновенная выдача · Файлы остаются у вас навсегда</p>
       <a class="scroll-link reveal" href="#inside">Посмотрите, что внутри
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg>
       </a>
@@ -283,7 +310,8 @@
           <p class="shot-meta">ссылка действует 72 часа</p>
         </div>
       </div>
-      <p class="preview-note reveal">Так выглядит страница выдачи: персональная ссылка формируется после подтверждения платежа и действует 72 часа.</p>
+      <p class="preview-note reveal">Так выглядит страница выдачи: персональная ссылка ведёт на защищённый файл и формируется автоматически после подтверждения платежа.</p>
+      <p class="preview-note reveal">Ссылка на архив действует 72 часа. Если потеряли файл — напишите на <a href="mailto:fallen843@yandex.ru">почту</a>, вышлем новую.</p>
     </div>
   </section>
 
@@ -314,7 +342,7 @@
             <li>Полная библиотека материалов</li>
             <li>Карта навигации / MOC</li>
             <li>Инструкция по оплате и Robokassa</li>
-            <li>Доступ навсегда</li>
+            <li>Файлы остаются у вас навсегда</li>
           </ul>
         </article>
 
@@ -331,11 +359,11 @@
           <p class="plan-divider">Что даёт Engine</p>
           <ul class="checklist">
             <li>Готовый сервер оплаты на Node.js</li>
-            <li>Robokassa: подпись, вебхук и чек уже в коде</li>
+            <li>Robokassa: подпись и вебхук уже в коде</li>
             <li>Воркер для бесплатного хостинга — Cloudflare</li>
             <li>Скрипты сборки и валидации базы</li>
             <li>Пошаговая инструкция по развёртыванию</li>
-            <li>Обновления 6 месяцев</li>
+            <li>Обновления версии публикуются в течение 6 месяцев с момента покупки на странице <a href="/changelog.html">«Что нового»</a> (vaultforge.ru/changelog.html)</li>
             <li>Все 37 файлов Vault</li>
           </ul>
         </article>
@@ -353,7 +381,7 @@
       <div class="faq">
         <details class="faq-item reveal">
           <summary>Какие условия возврата</summary>
-          <p>Запрос принимается 14 дней, но только если архив не открывается, состав не соответствует описанию или ссылка не пришла. После скачивания возврат не делается — так прописано в политике.</p>
+          <p>Запрос принимается 14 календарных дней, но только если архив не открывается, состав не соответствует описанию или ссылка не пришла. Если архив уже скачан, возврат производится по согласованию с Продавцом: напишите на <a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a> с номером заказа.</p>
         </details>
         <details class="faq-item reveal">
           <summary>Это курс или база знаний</summary>
@@ -369,7 +397,7 @@
         </details>
         <details class="faq-item reveal">
           <summary>Как проходит оплата</summary>
-          <p>Карты «Мир» и СБП через Robokassa. После подтверждения платежа формируется персональная ссылка на скачивание, действует 72 часа. Чек приходит по 54-ФЗ.</p>
+          <p>Карты «Мир» и СБП через Robokassa. После подтверждения платежа открывается страница с персональной ссылкой на скачивание архива: она ведёт на защищённый файл, действует 72 часа и открывается повторно в течение этого срока. Чек формируется в приложении «Мой налог» (налог на профессиональный доход). Нужен чек на вашу почту — напишите на <a href="mailto:fallen843@yandex.ru">fallen843@yandex.ru</a>, отправим в течение дня.</p>
         </details>
       </div>
     </div>
@@ -382,7 +410,7 @@
       <a class="btn-pill reveal" href="https://vaultforge-pay.duflyt.workers.dev/buy?plan=base">Получить Vault — 2 490 ₽
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
       </a>
-      <p class="micro reveal">Единоразовая оплата · Мгновенная выдача · Доступ навсегда</p>
+      <p class="micro reveal">Единоразовая оплата · Мгновенная выдача · Файлы остаются у вас навсегда</p>
     </div>
   </section>
 
@@ -396,6 +424,7 @@
         <a href="legal/offer.html">Публичная оферта</a>
         <a href="legal/refund.html">Политика возврата</a>
         <a href="checkout.html">Оплата</a>
+        <a href="/changelog.html">Что нового</a>
         <a href="mailto:fallen843@yandex.ru">Контакты</a>
       </nav>
     </div>
@@ -406,7 +435,7 @@
       <div><dt>Оплата</dt><dd>карты «Мир», СБП через Robokassa</dd></div>
       <div><dt>Выдача</dt><dd>персональная ссылка на архив, 72 часа</dd></div>
     </dl>
-    <p class="footer-note">Товар цифровой. Персональные данные не собираются, кроме необходимых для формирования чека. Продавец не гарантирует доход или коммерческий результат.</p>
+    <p class="footer-note">Товар цифровой. Сайт не собирает персональные данные: на страницах нет форм, счётчиков аналитики и внешних CDN. Данные банковской карты обрабатывает Robokassa; Продавец их не получает и не хранит. Если вы обратились в поддержку, сообщённые вами данные используются только для ответа по вашему заказу. Продавец не гарантирует доход или коммерческий результат.</p>
   </div>
 </footer>
 
