@@ -752,3 +752,22 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
   .btn-access{letter-spacing:.1em;font-size:10.5px;padding:13px 15px}
   .brand{font-size:12px;letter-spacing:.24em}
 }
+/* --- Форма оплаты: e-mail нужен для чека по НПД (вариант B) --- */
+.buy-form{margin:18px 0 0;display:grid;gap:10px;text-align:left}
+.buy-label{font-size:13px;letter-spacing:.02em;color:var(--muted)}
+.buy-input{
+  width:100%;padding:14px 18px;border-radius:12px;
+  border:1px solid var(--line-strong);background:rgba(255,255,255,.04);
+  color:var(--text);font:inherit;font-size:16px;
+}
+.buy-input::placeholder{color:var(--muted-2)}
+.buy-input:focus{outline:2px solid var(--indigo-2);outline-offset:2px;border-color:var(--indigo-2)}
+.buy-consent{
+  display:flex;gap:9px;align-items:flex-start;
+  font-size:13px;line-height:1.45;color:var(--muted-2);
+}
+.buy-consent input{margin-top:3px;width:16px;height:16px;flex:none;accent-color:var(--indigo-2)}
+.buy-consent a{color:var(--violet);text-decoration:underline;text-underline-offset:2px}
+.buy-form .btn-pill{width:100%;font-family:inherit;cursor:pointer}
+
+\n.buy-consent span{flex:1 1 auto;min-width:0}\n
