@@ -570,7 +570,9 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
   font-size:clamp(54px,6.2vw,80px);line-height:1;letter-spacing:-.05em;
   margin:34px 0 12px;color:var(--text);
 }
-.plan-price .cur{font-family:var(--font-sans);font-weight:500;font-size:.40em;letter-spacing:0;color:var(--text-2);transform:translateY(-.1em)}
+.plan-price .cur{font-family:var(--font-sans);font-weight:500;font-size:.40em;letter-spacing:0;color:var(--text-2);margin-left:.16em;transform:translateY(-.1em)}
+.plan-tag--muted{border-color:var(--line-strong);color:var(--text-2)}
+.plan-anchor{margin:-4px 0 16px;color:var(--text-2);font-size:14px;line-height:1.5;letter-spacing:-.01em}
 .plan-sub{color:var(--muted);font-size:14.5px;margin:0 0 28px}
 .plan .btn-pill{width:100%;padding:18px 20px;font-size:16px}
 .plan-micro{text-align:center;color:var(--muted-2);font-size:13px;margin-top:16px}
