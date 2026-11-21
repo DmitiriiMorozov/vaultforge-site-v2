@@ -672,8 +672,8 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
 .legal ul{list-style:disc}
 .legal li{margin:8px 0}
 .legal b,.legal strong{color:var(--text);font-weight:600}
-.legal a{color:var(--violet);text-decoration:underline;text-underline-offset:3px}
-.legal a:hover{color:var(--text)}
+.legal a:where(:not(.btn-access)){color:var(--violet);text-decoration:underline;text-underline-offset:3px}
+.legal a:where(:not(.btn-access)):hover{color:var(--text)}
 .legal .muted{color:var(--muted-2);font-size:14px}
 .legal code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px;font-size:14px}
 .legal-nav{display:flex;gap:26px;flex-wrap:wrap;margin-top:52px;padding-top:24px;border-top:1px solid var(--line);font-size:14.5px}
