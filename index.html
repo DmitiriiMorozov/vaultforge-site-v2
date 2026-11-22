@@ -25,6 +25,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://vaultforge.ru/#seller",
+  "name": "Vaultforge",
+  "url": "https://vaultforge.ru/",
+  "hasMerchantReturnPolicy": {
+    "@type": "MerchantReturnPolicy",
+    "merchantReturnLink": "https://vaultforge.ru/legal/refund.html"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "Product",
   "name": "Vaultforge",
   "description": "База знаний в Obsidian: как собрать цифровой продукт, подключить оплату и продавать без лица и блога. 41 файл, 26 уроков с чек-листами, промпты и шаблоны.",
@@ -33,6 +46,7 @@
   "offers": [
     {
       "@type": "Offer",
+      "seller": { "@id": "https://vaultforge.ru/#seller" },
       "name": "Vault + Engine",
       "url": "https://vaultforge.ru/checkout.html",
       "price": "6900",
@@ -41,6 +55,7 @@
     },
     {
       "@type": "Offer",
+      "seller": { "@id": "https://vaultforge.ru/#seller" },
       "name": "Vault",
       "url": "https://vaultforge.ru/checkout.html",
       "price": "2490",
