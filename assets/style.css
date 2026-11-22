@@ -780,3 +780,17 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
 .buy-form .btn-pill{width:100%;font-family:inherit;cursor:pointer}
 
 .buy-consent span{flex:1 1 auto;min-width:0}
+
+/* Состав архива Vault + Engine */
+.engine-tree {
+  margin: 24px 0;
+  padding: clamp(16px, 4vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.engine-tree pre {
+  margin: 0 0 16px;
+  overflow-x: auto;
+  font: 0.92rem/1.55 ui-monospace, monospace;
+}
+.engine-tree p { margin: 0; }

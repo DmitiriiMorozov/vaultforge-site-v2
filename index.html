@@ -188,16 +188,18 @@
         <p class="lead reveal">4 модуля, 26 уроков, промпты и шаблоны. Часть дополнительных файлов доступна только в тарифе Engine.</p>
       </div>
       <div class="links-row" data-vaultforge-only><a class="btn-access reveal" href="/docs/obsidian-course-template.html">Попробовать бесплатный мини-курс</a></div>
-            <figure class="device device--full">
-        <img class="device-img"
-             src="assets/vault-engine-1400.webp"
-             srcset="assets/vault-engine-1400.webp 1400w, assets/vault-engine-2100.webp 2100w"
-             sizes="(max-width: 820px) 100vw, 1080px"
-             width="1400" height="808"
-             alt="Окно Obsidian с распакованным архивом Vault + Engine: папка Engine с server.js и build_vault.py и открытый урок 3.1 с таблицей тарифов 2 490 и 6 900 ₽"
-             loading="lazy" decoding="async">
-      </figure>
-      <p class="preview-note reveal">Реальное превью: слева — распакованный архив Vault + Engine, папки <code>delivery</code> (сервер оплаты <code>server.js</code>) и <code>product</code> (сборщик <code>build_vault.py</code>, упаковщик <code>make_zip.py</code>, валидатор <code>validate_vault.py</code>); справа — урок 3.1 с таблицей тарифов. Эти файлы входят в тариф Vault + Engine за 6 900 ₽ и не входят в Vault за 2 490 ₽.</p>
+      <div class="engine-tree" aria-label="Состав папки Engine">
+        <pre>Engine/
+├── README.md
+├── product/
+│   ├── build_dist.py
+│   └── validate_vault.py
+├── site/
+├── ops/rf-payment/
+│   └── server.mjs
+└── pd/</pre>
+        <p>Рядом с хранилищем вы получаете сборщик ZIP, шаблон сайта и сервисы оплаты, выдачи и хранения заказов. Порядок запуска описан в <code>Engine/README.md</code>.</p>
+      </div>
 
       <figure class="device device--full">
         <img class="device-img"
@@ -494,42 +496,6 @@
   </div>
 </footer>
 
-<script>
-  document.documentElement.classList.add('js-reveal');
-  (function () {
-    var items = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-    function show(el) { el.classList.add('is-visible'); }
-    function showAll() { items.forEach(show); }
-
-    if (reduce.matches || !('IntersectionObserver' in window)) { showAll(); return; }
-
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) { show(entry.target); io.unobserve(entry.target); }
-      });
-    }, { rootMargin: '0px 0px 10% 0px', threshold: 0.05 });
-
-    items.forEach(function (el) { io.observe(el); });
-
-    // страховка: при быстром скролле IntersectionObserver может пропустить элемент
-    var queued = false;
-    function sweep() {
-      queued = false;
-      for (var i = 0; i < items.length; i++) {
-        var el = items[i];
-        if (el.classList.contains('is-visible')) continue;
-        var r = el.getBoundingClientRect();
-        if (r.top < window.innerHeight && r.bottom > 0) { show(el); io.unobserve(el); }
-      }
-    }
-    function queue() { if (!queued) { queued = true; window.requestAnimationFrame(sweep); } }
-
-    window.addEventListener('scroll', queue, { passive: true });
-    window.addEventListener('resize', queue);
-    sweep();
-  })();
-</script>
+<script src="assets/reveal.js" defer></script>
 </body>
 </html>
