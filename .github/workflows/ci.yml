@@ -1,0 +1,38 @@
+name: Site checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Check site archive
+        run: |
+          stage="$(mktemp -d)"
+          git archive HEAD | tar -xf - -C "$stage"
+          cd "$stage"
+          python3 - <<'PY'
+          from pathlib import Path
+          from urllib.parse import urlsplit
+          from xml.etree import ElementTree
+          from zipfile import ZipFile
+
+          for path in Path('.').rglob('*'):
+              assert not path.is_symlink() and all(not part.startswith('.') for part in path.parts), path
+          for loc in ElementTree.parse('sitemap.xml').findall('.//{*}loc'):
+              path = urlsplit(loc.text).path.lstrip('/')
+              target = Path(path) if path and not path.endswith('/') else Path(path) / 'index.html'
+              assert target.is_file(), target
+          for path in Path('docs').glob('*.zip'):
+              with ZipFile(path) as archive:
+                  assert archive.testzip() is None, path
+          PY
