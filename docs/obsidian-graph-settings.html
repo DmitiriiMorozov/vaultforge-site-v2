@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Как настроить читаемый граф в Obsidian — Vaultforge</title>
+<meta name="description" content="Готовые настройки графа Obsidian: цветовые группы по тегам, расстояние между узлами и читаемые подписи.">
+<meta name="theme-color" content="#050509">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Vaultforge">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Как настроить читаемый граф в Obsidian">
+<meta property="og:description" content="Готовые настройки графа Obsidian: цветовые группы по тегам, расстояние между узлами и читаемые подписи.">
+<meta property="og:url" content="https://vaultforge.ru/docs/obsidian-graph-settings.html">
+<meta property="og:image" content="https://vaultforge.ru/assets/vault-preview-og.jpg">
+<link rel="canonical" href="https://vaultforge.ru/docs/obsidian-graph-settings.html">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">VAULTFORGE</a>
+    <a href="/docs/">Гайды</a>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="wrap-narrow">
+    <article class="legal">
+      <h1 class="display">Как настроить читаемый граф в Obsidian</h1>
+      <p>Чтобы граф Obsidian читался, раскрасьте разделы по тегам, скройте заметки без связей и увеличьте расстояние между узлами. Ниже настройки Vaultforge, которые можно перенести в свой граф через интерфейс Obsidian.</p>
+      <figure class="guide-figure">
+        <img src="/assets/vault-preview-1400.webp"
+             srcset="/assets/vault-preview-1400.webp 1400w, /assets/vault-preview-2100.webp 2100w"
+             sizes="(max-width: 868px) calc(100vw - 48px), 820px"
+             width="1400" height="808"
+             alt="Окно Obsidian с графом Vaultforge и цветными группами заметок"
+             decoding="async">
+        <figcaption>Граф Vaultforge. Цвета отмечают разделы по продукту, продажам и трафику, а также шаблоны и другие типы заметок.</figcaption>
+      </figure>
+
+      <h2>Откройте граф и уберите лишние узлы</h2>
+      <p>Откройте граф через палитру команд Obsidian и нажмите шестерёнку справа вверху. В фильтрах отключите вложения и заметки без связей, если они мешают увидеть структуру. Включите «Только существующие файлы», чтобы скрыть узлы для ещё не созданных заметок.</p>
+
+      <h2>Задайте цветовые группы</h2>
+      <p>В разделе Groups добавьте группы с запросами по папкам или тегам. Например, <code>path:00_Start_Here</code> подсвечивает папку старта, а <code>tag:#sales</code> — заметки о продажах. Узкие группы поставьте выше широких. Например, если заметка отмечена и <code>#template</code>, и <code>#sales</code>, поставьте шаблоны первыми, чтобы сохранить их цвет.</p>
+
+      <h2>Разведите узлы и настройте подписи</h2>
+      <p>В Vaultforge использованы следующие значения из <code>.obsidian/graph.json</code>. В интерфейсе их можно настроить ползунками в разделах Forces и Display.</p>
+      <ul>
+        <li><strong>Размещение.</strong> Отталкивание (<code>repelStrength</code>) — 15, расстояние между связанными узлами (<code>linkDistance</code>) — 130, сила связей (<code>linkStrength</code>) — 1, сила центра (<code>centerStrength</code>) — 0,35.</li>
+        <li><strong>Отображение.</strong> Размер узлов (<code>nodeSizeMultiplier</code>) — 1,6, толщина линий (<code>lineSizeMultiplier</code>) — 1,3, порог затухания текста (<code>textFadeMultiplier</code>) — −0,3.</li>
+      </ul>
+      <p>На своём графе меняйте один ползунок за раз. Если разделы сливаются, начните с отталкивания. Если подписи перекрываются, уменьшите узлы или приблизьте нужную область. Для разбора одного модуля отфильтруйте граф по папке или откройте локальный граф нужной заметки.</p>
+      <p><a href="https://obsidian.md/help/plugins/graph">Описание настроек графа в справке Obsidian</a></p>
+      <p>В Vaultforge пресет уже включён. Можно открыть готовое хранилище и посмотреть, как группы и связи устроены на 41 файле базы знаний.</p>
+    </article>
+    <div class="guide-actions">
+      <a class="btn-access" href="../#inside">Посмотреть хранилище Vaultforge</a>
+      <nav class="legal-nav" aria-label="Другие гайды">
+        <a href="/docs/">Все гайды</a>
+        <a href="/docs/robokassa-digital-product.html">Как принять оплату за цифровой продукт через Robokassa</a>
+      </nav>
+    </div>
+  </div>
+</main>
+</body>
+</html>

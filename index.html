@@ -22,6 +22,7 @@
 <link rel="canonical" href="https://vaultforge.ru/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308080C'/%3E%3Ccircle cx='32' cy='33' r='13' fill='%234B50E4'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/funnel.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,7 +67,7 @@
 }
 </script>
 </head>
-<body>
+<body data-funnel="landing">
 
 <a class="skip-link" href="#main">Перейти к содержанию</a>
 
@@ -353,7 +354,7 @@
           </div>
           <p class="shot-title">Оплата получена</p>
           <p class="shot-sub">Ссылка на архив сформирована автоматически после подтверждения платежа.</p>
-          <span class="shot-btn">Скачать Vaultforge_v1.2.7.zip</span>
+          <span class="shot-btn">Скачать Vaultforge_v1.2.8.zip</span>
           <p class="shot-meta">ссылка действует 72 часа</p>
         </div>
       </div>
@@ -378,14 +379,14 @@
           </div>
           <p class="plan-desc">Всё из Vault плюс готовый лендинг, сервер оплаты и скрипты сборки базы. Кодить не нужно: сервер и вебхук уже написаны, остаётся развернуть по инструкции. Готовый код для развёртывания на вашем сервере; для приёма платежей понадобится собственный магазин в Robokassa.</p>
           <div class="plan-price">6 900 <span class="cur">₽</span></div>
-          <p class="plan-anchor">Сервер, воркер, скрипты и лендинг отдельно — 12 000 ₽</p>
+          <p class="plan-anchor">Для запуска на своей инфраструктуре</p>
           <p class="plan-sub">Единоразовая оплата · Без подписки</p>
           <a class="btn-pill" href="checkout.html#plan-engine">Получить Engine — 6 900 ₽ <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
           <p class="plan-micro">Доступ открывается сразу после подтверждения оплаты</p>
           <p class="plan-divider">Что даёт Engine</p>
           <ul class="checklist">
             <li>Сервер оплаты и выдачи на Node.js для хостинга в РФ: подпись, вебхук и чек Robokassa</li>
-            <li>Воркер для Cloudflare — вариант для хостинга за рубежом</li>
+            <li>Сервис хранения адресов покупателей на вашем VPS в РФ</li>
             <li>Скрипты сборки и валидации базы: build_vault.py, make_zip.py, validate_vault.py</li>
             <li>Готовый лендинг: страница с составом, ценой и оплатой</li>
             <li>Пошаговая инструкция по развёртыванию</li>
@@ -397,7 +398,7 @@
         <article class="plan reveal">
           <div class="plan-head">
             <h3 class="plan-name">Vault</h3>
-            <span class="plan-tag plan-tag--muted">Выбирают 7 из 10</span>
+            <span class="plan-tag plan-tag--muted">Для самостоятельного старта</span>
           </div>
           <p class="plan-desc">Научитесь создавать и продавать свой цифровой продукт в Obsidian.</p>
           <div class="plan-price">2 490 <span class="cur">₽</span></div>
@@ -440,7 +441,7 @@
         </details>
         <details class="faq-item reveal">
           <summary>Нужен ли опыт</summary>
-          <p>Нет. Первый результат — за 15 минут по уроку «Старт за 15 минут».</p>
+          <p>Нет. В первом уроке вы выберете тему и запишете черновик оффера. Отведите на это около 15 минут.</p>
         </details>
         <details class="faq-item reveal">
           <summary>Гарантируете ли доход</summary>
@@ -477,6 +478,7 @@
         <a href="/legal/privacy.html">Политика ПД</a>
         <a href="/reissue.html">Восстановить ссылку</a>
         <a href="checkout.html">Оплата</a>
+        <a href="https://vaultforge.ru/docs/">Гайды</a>
         <a href="/changelog.html">Что нового</a>
         <a href="mailto:support@vaultforge.ru">Контакты</a>
       </nav>

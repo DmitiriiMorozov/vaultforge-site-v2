@@ -22,6 +22,7 @@
 <link rel="canonical" href="https://vaultforge.ru/checkout.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308080C'/%3E%3Ccircle cx='32' cy='33' r='13' fill='%234B50E4'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/funnel.js" defer></script>
 </head>
 <body>
 
@@ -54,14 +55,14 @@
           </div>
           <p class="plan-desc">Всё из Vault плюс готовый лендинг, сервер оплаты и скрипты сборки базы. Кодить не нужно: сервер и вебхук уже написаны, остаётся развернуть по инструкции. Готовый код для развёртывания на вашем сервере; для приёма платежей понадобится собственный магазин в Robokassa.</p>
           <div class="plan-price">6 900 <span class="cur">₽</span></div>
-          <p class="plan-anchor">Сервер, воркер, скрипты и лендинг отдельно — 12 000 ₽</p>
+          <p class="plan-anchor">Для запуска на своей инфраструктуре</p>
           <p class="plan-sub">Единоразовая оплата · Без подписки</p>
           <form class="buy-form" method="post" action="https://pay.vaultforge.ru/buy"><input type="hidden" name="plan" value="pro"><label class="buy-label" for="email-pro">E-mail для чека</label><input class="buy-input" id="email-pro" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@example.ru"><label class="buy-consent"><input type="checkbox" name="consent" value="1" required> <span>Согласен на обработку персональных данных для чека по НПД — <a href="/legal/privacy.html">политика</a></span></label><button class="btn-pill" type="submit">Оплатить Engine — 6 900 ₽</button></form>
           <p class="plan-micro">Доступ открывается сразу после подтверждения оплаты. Ссылка на архив действует 72 часа; перевыпуск бесплатный в течение 90 дней с даты оплаты</p>
           <p class="plan-divider">Что даёт Engine</p>
           <ul class="checklist">
             <li>Сервер оплаты и выдачи на Node.js для хостинга в РФ: подпись, вебхук и чек Robokassa</li>
-            <li>Воркер для Cloudflare — вариант для хостинга за рубежом</li>
+            <li>Сервис хранения адресов покупателей на вашем VPS в РФ</li>
             <li>Скрипты сборки и валидации базы: build_vault.py, make_zip.py, validate_vault.py</li>
             <li>Готовый лендинг: страница с составом, ценой и оплатой</li>
             <li>Пошаговая инструкция по развёртыванию</li>
@@ -73,7 +74,7 @@
         <article class="plan" id="plan-vault">
           <div class="plan-head">
             <h2 class="plan-name">Vault</h2>
-            <span class="plan-tag plan-tag--muted">Выбирают 7 из 10</span>
+            <span class="plan-tag plan-tag--muted">Для самостоятельного старта</span>
           </div>
           <p class="plan-desc">Научитесь создавать и продавать свой цифровой продукт в Obsidian.</p>
           <div class="plan-price">2 490 <span class="cur">₽</span></div>
