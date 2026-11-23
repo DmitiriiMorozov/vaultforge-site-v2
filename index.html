@@ -95,14 +95,44 @@
       <a class="scroll-link reveal" href="#inside">Посмотрите, что внутри
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg>
       </a>
-            <figure class="device device--hero">
-        <img class="device-img"
+      <figure class="device device--hero" data-vault-preview>
+        <div class="preview-views" id="vault-preview-views">
+          <img class="device-img" data-vault-overview
              src="assets/vault-preview-1400.webp"
              srcset="assets/vault-preview-1400.webp 1400w, assets/vault-preview-2100.webp 2100w"
              sizes="(max-width: 820px) 100vw, 1080px"
              width="1400" height="808"
              alt="Окно Obsidian с хранилищем Vaultforge: граф связей 41 файла базы знаний, цветовые группы по модулям и раскрытая папка 03_Checkout_and_Delivery с уроками 3.1–3.6"
              decoding="async">
+          <img class="device-img preview-detail" data-vault-module
+               src="assets/vault-module-1400.webp"
+               srcset="assets/vault-module-1400.webp 1400w, assets/vault-module-2100.webp 2100w"
+               sizes="(max-width: 820px) 100vw, 1080px"
+               width="1400" height="808"
+               alt="Граф модуля «Оплата и выдача» в Obsidian. Видны шесть уроков и связи между ними."
+               aria-hidden="true" decoding="async" loading="lazy">
+        </div>
+        <figcaption>
+          <div class="preview-controls" role="group" aria-label="Вид хранилища Obsidian" data-preview-controls hidden>
+            <button type="button" aria-controls="vault-preview-views" aria-pressed="true" data-view="overview">Весь Vault</button>
+            <button type="button" aria-controls="vault-preview-views vault-module-lessons" aria-pressed="false" data-view="module">Приблизить «Оплата и выдача»</button>
+          </div>
+          <div class="preview-expand" id="vault-module-lessons" data-module-lessons inert>
+            <div class="preview-expand-inner">
+              <div class="graph-lessons">
+                <h2>Уроки в модуле «Оплата и выдача»</h2>
+                <ul>
+                  <li>3.1 · Матрица цен</li>
+                  <li>3.2 · Подключение Robokassa</li>
+                  <li>3.3 · Автоматическая выдача</li>
+                  <li>3.4 · Правовой каркас самозанятого</li>
+                  <li>3.5 · Возвраты и поддержка цифрового товара</li>
+                  <li>3.6 · Юнит-экономика и аналитика воронки</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </figcaption>
       </figure>
     </div>
   </section>
@@ -188,19 +218,6 @@
         <p class="lead reveal">4 модуля, 26 уроков, промпты и шаблоны. Часть дополнительных файлов доступна только в тарифе Engine.</p>
       </div>
       <div class="links-row" data-vaultforge-only><a class="btn-access reveal" href="/docs/obsidian-course-template.html">Попробовать бесплатный мини-курс</a></div>
-      <div class="engine-tree" aria-label="Состав папки Engine">
-        <pre>Engine/
-├── README.md
-├── product/
-│   ├── build_dist.py
-│   └── validate_vault.py
-├── site/
-├── ops/rf-payment/
-│   └── server.mjs
-└── pd/</pre>
-        <p>Рядом с хранилищем вы получаете сборщик ZIP, шаблон сайта и сервисы оплаты, выдачи и хранения заказов. Порядок запуска описан в <code>Engine/README.md</code>.</p>
-      </div>
-
       <figure class="device device--full">
         <img class="device-img"
              src="assets/vault-module-1400.webp"
@@ -371,6 +388,42 @@
         <p class="eyebrow reveal">ВЫБЕРИТЕ ФОРМАТ</p>
         <h2 class="h2-serif reveal" id="t-pricing">Выберите подходящий набор.</h2>
         <p class="lead reveal">Два набора: полный — с лендингом и сервером оплаты, и базовый — знания, уроки и шаблоны.</p>
+      </div>
+
+      <div class="engine-tree package-preview" data-package-preview>
+        <div class="package-preview-head">
+          <h3>Что лежит в архиве</h3>
+          <div class="preview-controls" role="group" aria-label="Комплект" data-package-controls hidden>
+            <button type="button" data-package="vault" aria-pressed="true" aria-controls="engine-preview-files">Vault</button>
+            <button type="button" data-package="engine" aria-pressed="false" aria-controls="engine-preview-files">Vault + Engine</button>
+          </div>
+        </div>
+        <ul class="package-tree">
+          <li>
+            <code>Vaultforge/</code>
+            <ul><li>41 файл, включая 26 уроков, шаблоны и промпты</li></ul>
+          </li>
+        </ul>
+        <div class="preview-expand is-expanded" id="engine-preview-files" data-package-engine>
+          <div class="preview-expand-inner">
+            <ul class="package-tree package-tree-engine">
+              <li><code>Engine/</code>
+                <ul>
+                  <li><code>README.md</code><span>Инструкция по развёртыванию</span></li>
+                  <li><code>product/</code><span>Сборка ZIP и проверка базы</span>
+                    <ul><li><code>build_dist.py</code></li><li><code>validate_vault.py</code></li></ul>
+                  </li>
+                  <li><code>site/</code><span>Шаблон лендинга и оплаты</span></li>
+                  <li><code>ops/rf-payment/</code><span>Оплата и выдача</span>
+                    <ul><li><code>server.mjs</code></li></ul>
+                  </li>
+                  <li><code>pd/</code><span>Сервис хранения данных покупателей</span></li>
+                </ul>
+              </li>
+            </ul>
+            <p>Порядок запуска описан в <code>Engine/README.md</code>.</p>
+          </div>
+        </div>
       </div>
 
       <div class="plans">

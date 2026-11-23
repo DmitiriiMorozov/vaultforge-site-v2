@@ -33,3 +33,52 @@
     window.addEventListener('resize', queue);
     sweep();
   })();
+
+(() => {
+  const preview = document.querySelector("[data-vault-preview]");
+  const controls = preview.querySelector("[data-preview-controls]");
+  const views = preview.querySelector(".preview-views");
+  const overview = preview.querySelector("[data-vault-overview]");
+  const module = preview.querySelector("[data-vault-module]");
+  const lessons = preview.querySelector("[data-module-lessons]");
+  const buttons = [...controls.querySelectorAll("[data-view]")];
+
+  function select(view) {
+    const showModule = view === "module";
+    views.classList.toggle("is-module", showModule);
+    overview.setAttribute("aria-hidden", String(showModule));
+    module.setAttribute("aria-hidden", String(!showModule));
+    lessons.classList.toggle("is-expanded", showModule);
+    lessons.inert = !showModule;
+    for (const button of buttons) {
+      button.setAttribute("aria-pressed", String(button.dataset.view === view));
+    }
+  }
+
+  for (const button of buttons) {
+    button.addEventListener("click", () => select(button.dataset.view));
+  }
+  controls.hidden = false;
+})();
+
+(() => {
+  const preview = document.querySelector("[data-package-preview]");
+  const controls = preview.querySelector("[data-package-controls]");
+  const engine = preview.querySelector("[data-package-engine]");
+  const buttons = [...controls.querySelectorAll("[data-package]")];
+
+  engine.classList.remove("is-expanded");
+  engine.inert = true;
+  for (const button of buttons) {
+    button.addEventListener("click", () => {
+      const showEngine = button.dataset.package === "engine";
+      engine.setAttribute("data-animate", "");
+      engine.classList.toggle("is-expanded", showEngine);
+      engine.inert = !showEngine;
+      for (const option of buttons) {
+        option.setAttribute("aria-pressed", String(option === button));
+      }
+    });
+  }
+  controls.hidden = false;
+})();

@@ -794,3 +794,134 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
   font: 0.92rem/1.55 ui-monospace, monospace;
 }
 .engine-tree p { margin: 0; }
+
+/* Переключение вида только внутри превью Obsidian. */
+.preview-views {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 50px 110px rgba(0, 0, 0, .66), 0 0 0 1px rgba(255, 255, 255, .03);
+}
+
+.preview-views .device-img { box-shadow: none; }
+
+.preview-views .preview-detail {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.03);
+  transform-origin: 52% 52%;
+  transition: opacity .32s ease, transform .48s cubic-bezier(.22, .61, .36, 1);
+}
+
+.preview-views.is-module .preview-detail {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.preview-controls:not([hidden]) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.preview-controls button {
+  min-height: 44px;
+  padding: 8px 15px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--text-2);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.preview-controls button:hover,
+.preview-controls button[aria-pressed="true"] {
+  border-color: var(--line-strong);
+  color: var(--text);
+}
+
+.preview-controls button[aria-pressed="true"] {
+  background: var(--card);
+}
+
+.preview-expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+}
+
+.preview-expand.is-expanded { grid-template-rows: 1fr; opacity: 1; }
+.preview-expand-inner { overflow: hidden; min-height: 0; }
+.preview-expand[data-module-lessons],
+.preview-expand[data-animate] {
+  transition: grid-template-rows .32s cubic-bezier(.22, .61, .36, 1), opacity .24s ease;
+}
+
+.graph-lessons {
+  max-width: 760px;
+  margin: 20px auto 0;
+  padding: 16px 20px 5px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+
+.graph-lessons h2 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.graph-lessons ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-2);
+  font-size: 13px;
+}
+
+.package-preview h3 {
+  color: var(--text);
+  font: 500 clamp(21px, 2.8vw, 29px)/1.25 var(--font-serif);
+}
+
+.package-preview {
+  position: relative;
+  max-width: 840px;
+  margin: 0 auto;
+  background: var(--card);
+}
+
+.package-preview-head { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; margin-bottom: 14px; }
+.package-preview-head .preview-controls { justify-content: flex-start; margin: 0; }
+.package-tree, .package-tree ul { margin: 0; list-style: none; }
+.package-tree { padding: 0; color: var(--text-2); font-size: 14px; }
+.package-tree ul { margin-left: 5px; padding-left: 15px; border-left: 1px solid var(--line-strong); }
+.package-tree li { padding: 3px 0; overflow-wrap: anywhere; }
+.package-tree code { color: var(--text); }
+.package-tree li span { display: inline-block; margin-left: 10px; }
+.package-tree-engine { margin-top: 9px; }
+.package-tree-engine > li > code { color: var(--violet); }
+.package-preview .preview-expand p { margin-top: 12px; color: var(--text-2); font-size: 13px; }
+
+@media (max-width: 560px) {
+  .graph-lessons { padding-inline: 4px; }
+  .graph-lessons ul { grid-template-columns: 1fr; }
+  .preview-views .preview-detail { object-position: 65% 52%; transform-origin: 46% 53%; }
+  .package-tree li span { display: block; margin-left: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preview-views .preview-detail,
+  .preview-expand[data-module-lessons],
+  .preview-expand[data-animate] {
+    transition: none;
+  }
+}
