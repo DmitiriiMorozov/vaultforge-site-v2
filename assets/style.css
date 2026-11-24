@@ -166,8 +166,13 @@ body{
 .display em,.display .accent{
   font-style:italic;
   color:var(--violet);
-  border-bottom:2px solid var(--indigo);
-  padding-bottom:.04em;
+  /* подчёркивание вместо border-bottom: при переносе строк border-bottom рисуется
+     под каждой строкой и наезжает на следующую; text-decoration идёт по базовой линии */
+  text-decoration:underline;
+  text-decoration-color:var(--indigo);
+  text-decoration-thickness:2px;
+  text-underline-offset:.14em;
+  text-decoration-skip-ink:none;
 }
 .h2-serif{
   font-family:var(--font-serif);
@@ -343,7 +348,8 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
 }
 .hero .wrap{position:relative;z-index:2}
 .hero .eyebrow{margin-bottom:40px;text-align:center}
-.hero .display{max-width:15.5ch;margin:0 auto 30px;text-align:center}
+.hero .display{max-width:none;line-height:1.12;margin:0 auto 30px;text-align:center}
+.hero .display em{display:block}
 .hero .lead{margin:0 auto 42px;max-width:54ch;color:var(--text-2)}
 .hero .btn-pill{min-width:min(430px,100%)}
 .hero .micro{margin:22px 0 0}
@@ -713,7 +719,6 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
   .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .stat-cell:nth-child(2n){border-right:0}
   .stat-cell:nth-child(-n+2){border-bottom:1px solid var(--line-soft)}
-  .hero .display{max-width:18ch}
   .manifesto{padding:84px 0 90px}
   .module-row{grid-template-columns:54px minmax(0,1fr);gap:16px;padding:26px 0}
   .flow-step{grid-template-columns:60px minmax(0,1fr);gap:16px;padding:24px 22px}
@@ -727,7 +732,6 @@ section[id],.section[id],.hero[id]{scroll-margin-top:96px}
   .display{font-size:clamp(32px,9vw,42px)}
   .hero{padding:64px 0 72px}
   .hero .eyebrow{letter-spacing:.02em;font-size:11px;margin-bottom:28px}
-  .hero .display{max-width:100%}
   .hero .lead{margin-bottom:34px}
   .hero .btn-pill{min-width:0;width:100%;padding:17px 22px}
   .device{margin-top:52px}
