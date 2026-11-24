@@ -1,7 +1,7 @@
 (() => {
   const current = new URL(location.href);
   const raw = document.body.dataset.funnel === 'delivery-demo' ? 'delivery-demo' : current.searchParams.get('src') || '';
-  const source = /^(?:(?:vk|shorts|tg|dzen)-(?:0[1-9]|10)|(?:github|gallery|delivery)-demo)$/.test(raw) ? raw : 'direct';
+  const source = /^(?:(?:reels|shorts|tiktok|tg)-(?:0[1-9]|10|profile)|(?:vk|dzen)-(?:0[1-9]|10)|(?:github|gallery|delivery)-demo)$/.test(raw) ? raw : 'direct';
   const count = (event) => {
     fetch('/_vf/funnel', {
       method: 'POST',
